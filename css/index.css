@@ -26,6 +26,15 @@
     width: 50%;
 }
 
+/**
+ * Desktop
+*/
+@media screen and (min-width: 1000px) {
+    .hide-nav-menu{
+        display: none;
+    }
+}
+
 /*
 TABLET
 */
@@ -45,6 +54,11 @@ TABLET
 
     .bio-info{
         margin-left: 6%;
+    }
+
+    .logo{
+        width: 120%;
+        height: 90%;
     }
 }
 

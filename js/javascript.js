@@ -4,7 +4,6 @@
  * index bnts codes
  */
 
-
 /**
  * Click
  */
@@ -72,8 +71,6 @@ $( ".btn-download-cv" ).hover(function() {
     $(this).fadeOut(50);
     $(this).fadeIn(250);
 });
-
-
 
 /**
  * Enter a URL and open in new tab
