@@ -31,6 +31,22 @@ $( ".logo" ).on( "click", function() {
     openNewTab("https://felipedelosh.github.io/AFE-PORTFOLIO/");
 });
 
+$( ".url-post" ).on( "click", function() {
+    openHTML("posts.html");
+});
+
+$( ".url-code" ).on( "click", function() {
+    openHTML("code.html");
+});
+
+$( ".url-projects" ).on( "click", function() {
+    openHTML("projects.html");
+});
+
+$( ".url-cv" ).on( "click", function() {
+    openHTML("DOWNLOAD/cv.pdf");
+});
+
 
 /**
  * Effects
@@ -85,4 +101,8 @@ function openNewTab(url){
 function openLocalTab(url){
     var win = window.open(url, '#');
     win.focus();
+}
+
+function openHTML(url){
+    window.open(url, "_self");
 }
