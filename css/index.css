@@ -27,6 +27,30 @@
 }
 
 /*
+TABLET
+*/
+@media screen and (max-width: 1000px) {
+    .navbar-links{
+      display: none;
+    }
+}
+
+/*
+ * MOBILE
+*/
+@media screen and (max-width: 600px) {
+    .contact-info{
+      display: none;
+    }
+
+    .bio-info{
+        margin-left: 6%;
+    }
+}
+
+
+
+/*
 .btn-send-email:hover,.btn-go-linkedin,.btn-go-github,.btn-send-whatsapp{
     cursor: pointer;
     background-color: #afdaf0;
