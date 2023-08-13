@@ -24,6 +24,14 @@ $( ".btn-send-whatsapp" ).on( "click", function() {
     openNewTab("https://api.whatsapp.com/send/?phone=%2B573005437123&text=hola%2C+He+visto+tu+CV+y+estoy+interasado.&type=phone_number&app_absent=0");
 });
 
+$( ".btn-download-cv" ).on( "click", function() {
+    openLocalTab("DOWNLOAD/cv.pdf");
+});
+
+$( ".logo" ).on( "click", function() {
+    openNewTab("https://felipedelosh.github.io/AFE-PORTFOLIO/");
+});
+
 
 /**
  * Effects
@@ -60,6 +68,12 @@ $( ".btn-send-whatsapp" ).hover(function() {
     $(this).css("background-color","white");
 });
 
+$( ".btn-download-cv" ).hover(function() {
+    $(this).fadeOut(50);
+    $(this).fadeIn(250);
+});
+
+
 
 /**
  * Enter a URL and open in new tab
@@ -68,5 +82,10 @@ $( ".btn-send-whatsapp" ).hover(function() {
 
 function openNewTab(url){
     var win = window.open(url, '_blank');
+    win.focus();
+}
+
+function openLocalTab(url){
+    var win = window.open(url, '#');
     win.focus();
 }
