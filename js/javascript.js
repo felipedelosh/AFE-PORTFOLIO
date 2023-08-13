@@ -4,6 +4,10 @@
  * index bnts codes
  */
 
+
+/**
+ * Click
+ */
 $( ".btn-send-email" ).on( "click", function() {
     openNewTab("mailto:doctorfhernandez@hotmail.com?subject=He visto tu CV&body=Me gustaria contactarte.");
 });
@@ -20,6 +24,47 @@ $( ".btn-send-whatsapp" ).on( "click", function() {
     openNewTab("https://api.whatsapp.com/send/?phone=%2B573005437123&text=hola%2C+He+visto+tu+CV+y+estoy+interasado.&type=phone_number&app_absent=0");
 });
 
+
+/**
+ * Effects
+ */
+$( ".btn-send-email" ).hover(function() {
+    $(this).fadeOut(5);
+    $(this).fadeIn(25);
+    $(this).css("background-color","#afdaf0");
+}).mouseleave(function() {  
+    $(this).css("background-color","white");
+});
+
+$( ".btn-go-linkedin" ).hover(function() {
+    $(this).fadeOut(5);
+    $(this).fadeIn(25);
+    $(this).css("background-color","#afdaf0");
+}).mouseleave(function() {  
+    $(this).css("background-color","white");
+});
+
+$( ".btn-go-github" ).hover(function() {
+    $(this).fadeOut(5);
+    $(this).fadeIn(25);
+    $(this).css("background-color","#afdaf0");
+}).mouseleave(function() {  
+    $(this).css("background-color","white");
+});
+
+$( ".btn-send-whatsapp" ).hover(function() {
+    $(this).fadeOut(5);
+    $(this).fadeIn(25);
+    $(this).css("background-color","#afdaf0");
+}).mouseleave(function() {  
+    $(this).css("background-color","white");
+});
+
+
+/**
+ * Enter a URL and open in new tab
+ * @param {*} url 
+ */
 
 function openNewTab(url){
     var win = window.open(url, '_blank');
