@@ -44,7 +44,7 @@ $( ".url-projects" ).on( "click", function() {
 });
 
 $( ".url-cv" ).on( "click", function() {
-    openHTML("DOWNLOAD/cv.pdf");
+    openHTML("cv.html");
 });
 
 

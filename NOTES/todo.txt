@@ -1,0 +1,14 @@
+1 -> Hacer un diseño bien bonito.
+2 -> Hacer los proyectos más atractivos con photoshop.
+3 -> Hacer una arquitectura de la pagina.
+4 -> Lenguajes.
+
+
+POST:
+
+1 -> Subir proyecto a GITHUB.
+2 -> Hacer diagrama circular resposivo con todo y sustentación matematica.
+3 -> Ley de los numeros muy grandes.
+4 -> Experiencia sobre mi ultimo empleo.
+5 -> La vida en 8 bit.
+6 -> Ultimos test.
