@@ -19,6 +19,11 @@ $( ".btn-go-youtube" ).on( "click", function() {
     openNewTab("https://www.youtube.com/@doctorfhernandez1/videos");
 });
 
+$( ".btn-go-instagram" ).on( "click", function() {
+    openNewTab("https://www.instagram.com/ccc_co_ccc");
+});
+
+
 $( ".btn-go-github" ).on( "click", function() {
     openNewTab("https://github.com/felipedelosh");
 });
@@ -81,6 +86,14 @@ $( ".btn-go-linkedin" ).hover(function() {
 });
 
 $( ".btn-go-youtube" ).hover(function() {
+    $(this).fadeOut(5);
+    $(this).fadeIn(25);
+    $(this).css("background-color","#afdaf0");
+}).mouseleave(function() {  
+    $(this).css("background-color","white");
+});
+
+$( ".btn-go-instagram" ).hover(function() {
     $(this).fadeOut(5);
     $(this).fadeIn(25);
     $(this).css("background-color","#afdaf0");
