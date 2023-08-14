@@ -1,3 +1,4 @@
+0 -> Imagenes propias.
 1 -> Hacer un diseño bien bonito.
 2 -> Hacer los proyectos más atractivos con photoshop.
 3 -> Hacer una arquitectura de la pagina.

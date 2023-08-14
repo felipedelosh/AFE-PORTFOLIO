@@ -15,6 +15,10 @@ $( ".btn-go-linkedin" ).on( "click", function() {
     openNewTab("https://www.linkedin.com/in/andr%C3%A9s-felipe-hern%C3%A1ndez-4b12ab83/");
 });
 
+$( ".btn-go-stackoverflow" ).on( "click", function() {
+    openNewTab("https://es.stackoverflow.com/users/182484/andres-felipe-hernandez");
+});
+
 $( ".btn-go-youtube" ).on( "click", function() {
     openNewTab("https://www.youtube.com/@doctorfhernandez1/videos");
 });
@@ -22,7 +26,6 @@ $( ".btn-go-youtube" ).on( "click", function() {
 $( ".btn-go-instagram" ).on( "click", function() {
     openNewTab("https://www.instagram.com/ccc_co_ccc");
 });
-
 
 $( ".btn-go-github" ).on( "click", function() {
     openNewTab("https://github.com/felipedelosh");
@@ -78,6 +81,14 @@ $( ".btn-send-email" ).hover(function() {
 });
 
 $( ".btn-go-linkedin" ).hover(function() {
+    $(this).fadeOut(5);
+    $(this).fadeIn(25);
+    $(this).css("background-color","#afdaf0");
+}).mouseleave(function() {  
+    $(this).css("background-color","white");
+});
+
+$( ".btn-go-stackoverflow" ).hover(function() {
     $(this).fadeOut(5);
     $(this).fadeIn(25);
     $(this).css("background-color","#afdaf0");
