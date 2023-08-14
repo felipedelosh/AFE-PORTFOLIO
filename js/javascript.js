@@ -97,6 +97,27 @@ $( ".btn-download-cv" ).hover(function() {
     $(this).fadeIn(250);
 });
 
+/***
+ * Media querys
+ * 
+ */
+/**
+ * If the user resize a window the bottom text is update
+ */
+$(window).resize(function(){
+    const date = new Date();
+    let year = date.getFullYear();
+
+    if ($(window).width() <= 580) {  
+        $('.txt-footer-text').text("© "+year.toString()+" "+"-FelipedelosH-VR-MOBILE.");
+    }else if($(window).width() >= 580 && $(window).width() <= 982){
+        $('.txt-footer-text').text("© "+year.toString()+" "+"-FelipedelosH-VR-TABLET.");
+    }else if($(window).width() > 982){
+        $('.txt-footer-text').text("© "+year.toString()+" "+"-FelipedelosH-VR-DESKTOP.");
+    }
+});
+
+
 /**
  * Enter a URL and open in new tab
  * @param {*} url 
