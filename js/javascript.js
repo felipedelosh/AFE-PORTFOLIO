@@ -121,11 +121,11 @@ $(window).resize(function(){
     let year = date.getFullYear();
 
     if ($(window).width() <= 580) {  
-        $('.txt-footer-text').text("© "+year.toString()+" "+"-FelipedelosH-VR-MOBILE.");
+        $('.txt-footer-text').text("© "+year.toString()+"-FelipedelosH-VR-MOBILE.");
     }else if($(window).width() >= 580 && $(window).width() <= 982){
-        $('.txt-footer-text').text("© "+year.toString()+" "+"-FelipedelosH-VR-TABLET.");
+        $('.txt-footer-text').text("© "+year.toString()+"-FelipedelosH-VR-TABLET.");
     }else if($(window).width() > 982){
-        $('.txt-footer-text').text("© "+year.toString()+" "+"-FelipedelosH-VR-DESKTOP.");
+        $('.txt-footer-text').text("© "+year.toString()+"-FelipedelosH-VR-DESKTOP.");
     }
 });
 

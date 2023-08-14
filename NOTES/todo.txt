@@ -3,6 +3,14 @@
 3 -> Hacer una arquitectura de la pagina.
 4 -> Lenguajes. > en code.
 
+CODE:
+
+# Hacer un un futuro.
+Planta: todos los dias corre el reloj... q dia muestra una imagen diferente de una plata.
+la plata esta escrita en javascript.
+nace, crece, muere.
+la planta crece 1 vez cada 24 horas por lo que se necesita que se compare: fecha anterior de crecimiento.
+
 
 POST:
 

@@ -1,11 +1,32 @@
 /***
  * Save Files in HardDrive :)
  */
+const fecha = new Date();
+
 
 localStorage.setItem('autor', 'felipdelosh');
-localStorage.setItem('name', 'unknow');
+localStorage.setItem('date_enter', fecha.toDateString());
 
+//You have a plant?
+if(localStorage.getItem('plant_status') === null){
+    localStorage.setItem('plant_status', 'death');
+}
+
+//Save a first user visit
 if(localStorage.getItem('date_first_time_visited_page') === null){
-    const fecha = new Date();
     localStorage.setItem('date_first_time_visited_page', fecha.toDateString());
 }
+
+//Counter you visits
+if(localStorage.getItem('visit-counter') === null){
+    localStorage.setItem('visit-counter', 0);
+}else{
+    var count = localStorage.getItem('visit-counter');
+    count = count + 1;
+    localStorage.setItem('visit-counter', count);
+}
+
+
+/**
+ * 
+ */
