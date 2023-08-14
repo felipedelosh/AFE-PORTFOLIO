@@ -25,8 +25,3 @@ if(localStorage.getItem('visit-counter') === null){
     count = count + 1;
     localStorage.setItem('visit-counter', count);
 }
-
-
-/**
- * 
- */
