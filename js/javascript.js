@@ -28,7 +28,7 @@ $( ".btn-download-cv" ).on( "click", function() {
 });
 
 $( ".logo" ).on( "click", function() {
-    openNewTab("https://felipedelosh.github.io/AFE-PORTFOLIO/");
+    openHTML("index.html");
 });
 
 $( ".url-post" ).on( "click", function() {
@@ -50,7 +50,16 @@ $( ".url-cv" ).on( "click", function() {
 
 /**
  * Effects
- */
+*/
+$( ".logo" ).hover(function() {
+    $(this).fadeOut(5);
+    $(this).fadeIn(25);
+    $(this).css("background-color","#afdaf0");
+}).mouseleave(function() {  
+    $(this).css("background-color","#e3f2fd");
+});
+
+
 $( ".btn-send-email" ).hover(function() {
     $(this).fadeOut(5);
     $(this).fadeIn(25);
