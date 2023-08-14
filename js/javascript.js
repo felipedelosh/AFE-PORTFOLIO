@@ -32,7 +32,7 @@ $( ".btn-download-cv" ).on( "click", function() {
 });
 
 $( ".logo" ).on( "click", function() {
-    openHTML("index.html");
+    openLocalTab("https://felipedelosh.github.io/AFE-PORTFOLIO");
 });
 
 $( ".url-post" ).on( "click", function() {
@@ -141,7 +141,7 @@ function openNewTab(url){
 }
 
 function openLocalTab(url){
-    var win = window.open(url, '#');
+    var win = window.open(url, '_self');
     win.focus();
 }
 
