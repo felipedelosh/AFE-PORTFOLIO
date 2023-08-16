@@ -2,11 +2,15 @@
     background-color: #e3f2fd;
 }
 
+.btn-menu{
+    margin-left: 40%;
+}
 
 .logo{
     margin-top: 2%;
     margin-left: 2%;
     margin-bottom: 2%;
+    width: 60%;
 }
 
 .img-banner{
@@ -43,6 +47,10 @@ TABLET
     .navbar-links{
       display: none;
     }
+
+    .logo{
+        width: 80%;
+    }
 }
 
 /*
@@ -62,8 +70,6 @@ TABLET
         height: 90%;
     }
 }
-
-
 
 /*
 .btn-send-email:hover,.btn-go-linkedin,.btn-go-github,.btn-send-whatsapp{
