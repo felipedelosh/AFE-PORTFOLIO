@@ -9,7 +9,7 @@ localStorage.setItem('date_enter', fecha.toDateString());
 
 //YOU VIEW IN LIGTH OR DARK MODE?
 if(localStorage.getItem('view_mode') === null){
-    localStorage.setItem('view_mode', 'light');
+    localStorage.setItem('view_mode', 'dark');
 }
 
 //You have a plant?
