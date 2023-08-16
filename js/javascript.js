@@ -141,17 +141,9 @@ $( ".btn-download-cv" ).hover(function() {
  * If the user resize a window the bottom text is update
  */
 $(window).resize(function(){
-    const date = new Date();
-    let year = date.getFullYear();
-
-    if ($(window).width() <= 580) {  
-        $('.txt-footer-text').text("© "+year.toString()+"-FelipedelosH-VR-MOBILE.");
-    }else if($(window).width() >= 580 && $(window).width() <= 982){
-        $('.txt-footer-text').text("© "+year.toString()+"-FelipedelosH-VR-TABLET.");
-    }else if($(window).width() > 982){
-        $('.txt-footer-text').text("© "+year.toString()+"-FelipedelosH-VR-DESKTOP.");
-    }
+    resize();
 });
+
 
 
 /**
@@ -172,3 +164,44 @@ function openLocalTab(url){
 function openHTML(url){
     window.open(url, "_self");
 }
+
+/**
+ * When you open the page or resize de page or refresh 
+ * execute 
+ */
+function resize(){
+    const date = new Date();
+    let year = date.getFullYear();
+
+    if ($(window).width() <= 580) {  
+        $('.projects-info').removeClass("col-8");
+        $('.bio-posts').removeClass("col-8");
+        $('.bio-code').removeClass("col-8");
+        $('.bio-info').removeClass("col-8");
+        $('.contact-info').css("display", "none");
+        $('.navbar-links').css("display", "none");
+        $('.hide-nav-menu').css("display", "block");
+        $('.txt-footer-text').text("© "+year.toString()+"-FelipedelosH-VR-MOBILE.");
+    }else if($(window).width() >= 580 && $(window).width() <= 982){
+        $('.projects-info').addClass("col-8");
+        $('.bio-posts').addClass("col-8");
+        $('.bio-code').addClass("col-8");
+        $('.bio-info').addClass("col-8");
+        $('.contact-info').css("display", "block");
+        $('.navbar-links').css("display", "none");
+        $('.hide-nav-menu').css("display", "block");
+        $('.txt-footer-text').text("© "+year.toString()+"-FelipedelosH-VR-TABLET.");
+    }else if($(window).width() > 982){
+        $('.projects-info').addClass("col-8");
+        $('.bio-posts').addClass("col-8");
+        $('.bio-code').addClass("col-8");
+        $('.bio-info').addClass("col-8");
+        $('.contact-info').css("display", "block");
+        $('.navbar-links').css("display", "block");
+        $('.hide-nav-menu').css("display", "none");
+        $('.txt-footer-text').text("© "+year.toString()+"-FelipedelosH-VR-DESKTOP.");
+    }
+}
+
+
+resize();
