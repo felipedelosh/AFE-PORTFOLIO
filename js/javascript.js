@@ -75,17 +75,17 @@ $( ".logo" ).hover(function() {
     $(this).fadeOut(5);
     $(this).fadeIn(25);
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
-        $(this).css("background-color","red");
+    if (mode === null || mode == "dark"){
+        $(this).css("background-color","black");
     }else{
         $(this).css("background-color","#afdaf0");
     }
 }).mouseleave(function() {  
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","black");
     }else{
-        $(this).css("background-color","white");
+        $(this).css("background-color","#afdaf0");
     }
 });
 
@@ -94,14 +94,14 @@ $( ".btn-send-email" ).hover(function() {
     $(this).fadeOut(5);
     $(this).fadeIn(25);
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","red");
     }else{
         $(this).css("background-color","#afdaf0");
     }
 }).mouseleave(function() {  
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","black");
     }else{
         $(this).css("background-color","white");
@@ -112,14 +112,14 @@ $( ".btn-go-linkedin" ).hover(function() {
     $(this).fadeOut(5);
     $(this).fadeIn(25);
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","red");
     }else{
         $(this).css("background-color","#afdaf0");
     }
 }).mouseleave(function() {  
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","black");
     }else{
         $(this).css("background-color","white");
@@ -130,14 +130,14 @@ $( ".btn-go-stackoverflow" ).hover(function() {
     $(this).fadeOut(5);
     $(this).fadeIn(25);
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","red");
     }else{
         $(this).css("background-color","#afdaf0");
     }
 }).mouseleave(function() {  
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","black");
     }else{
         $(this).css("background-color","white");
@@ -148,14 +148,14 @@ $( ".btn-go-youtube" ).hover(function() {
     $(this).fadeOut(5);
     $(this).fadeIn(25);
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","red");
     }else{
         $(this).css("background-color","#afdaf0");
     }
 }).mouseleave(function() {  
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","black");
     }else{
         $(this).css("background-color","white");
@@ -166,14 +166,14 @@ $( ".btn-go-instagram" ).hover(function() {
     $(this).fadeOut(5);
     $(this).fadeIn(25);
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","red");
     }else{
         $(this).css("background-color","#afdaf0");
     }
 }).mouseleave(function() {  
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","black");
     }else{
         $(this).css("background-color","white");
@@ -184,14 +184,14 @@ $( ".btn-go-github" ).hover(function() {
     $(this).fadeOut(5);
     $(this).fadeIn(25);
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","red");
     }else{
         $(this).css("background-color","#afdaf0");
     }
 }).mouseleave(function() {  
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","black");
     }else{
         $(this).css("background-color","white");
@@ -202,14 +202,14 @@ $( ".btn-send-whatsapp" ).hover(function() {
     $(this).fadeOut(5);
     $(this).fadeIn(25);
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","red");
     }else{
         $(this).css("background-color","#afdaf0");
     }
 }).mouseleave(function() {  
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $(this).css("background-color","black");
     }else{
         $(this).css("background-color","white");
@@ -269,10 +269,10 @@ function openHTML(url){
 function turnLights(){
     var mode = localStorage.getItem('view_mode');
     if (mode === null || mode == "light"){
-        $(".btn-floating").attr("src","assets/img/ico/off.png");
+        $(".btn-floating").attr("src","assets/img/ico/on.png");
         localStorage.setItem('view_mode', 'dark');
     }else{
-        $(".btn-floating").attr("src","assets/img/ico/on.png");
+        $(".btn-floating").attr("src","assets/img/ico/off.png");
         localStorage.setItem('view_mode', 'light');
     }
 
@@ -284,13 +284,14 @@ function turnLights(){
 
 function iluminationRefresh(){
     var mode = localStorage.getItem('view_mode');
-    if (mode === null || mode == "light"){
+    if (mode === null || mode == "dark"){
         $('body').css('background-color', 'black');
         $('div').css('background-color', 'black');
         $('row').css('background-color', 'black');
         $('svg').css('color', 'green');
         $('hr').css('color', 'white');
         $('.navbar').css('background-color', 'black');
+        $('.logo').css('background-color', 'black');
         $('.navbar').removeClass("navbar-light");
         $('.navbar').removeClass("bg-light");
 
@@ -313,6 +314,7 @@ function iluminationRefresh(){
         $('row').css('background-color', 'white');
         $('svg').css('color', 'black');
         $('hr').css('color', 'black');
+        $('.logo').css('background-color', '#afdaf0');
         $('.navbar').css('background-color', 'white');
         $('.navbar').addClass("navbar-light");
         $('.navbar').addClass("bg-light");
