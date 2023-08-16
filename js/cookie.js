@@ -7,6 +7,11 @@ const fecha = new Date();
 localStorage.setItem('autor', 'felipdelosh');
 localStorage.setItem('date_enter', fecha.toDateString());
 
+//YOU VIEW IN LIGTH OR DARK MODE?
+if(localStorage.getItem('view_mode') === null){
+    localStorage.setItem('view_mode', 'light');
+}
+
 //You have a plant?
 if(localStorage.getItem('plant_status') === null){
     localStorage.setItem('plant_status', 'death');
