@@ -85,7 +85,7 @@ $( ".logo" ).hover(function() {
     if (mode === null || mode == "dark"){
         $(this).css("background-color","black");
     }else{
-        $(this).css("background-color","#afdaf0");
+        $(this).css("background-color","white");
     }
 });
 
@@ -342,7 +342,7 @@ function resize(){
     const date = new Date();
     let year = date.getFullYear();
 
-    if ($(window).width() <= 580) {  
+    if ($(window).width() < 580) {  
         $('.projects-info').removeClass("col-8");
         $('.bio-posts').removeClass("col-8");
         $('.bio-code').removeClass("col-8");
