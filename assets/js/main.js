@@ -9,10 +9,25 @@ $( ".btn-to-click" ).on( "click", function() {
 });
 
 //EXTERNAL LINKS
-$( ".btn-external-click" ).on( "click", function() {
-    //new tab
+$( ".btn-go-github" ).on( "click", function() {
+    openNewTab("https://github.com/felipedelosh");
 });
 
+$( ".btn-go-stackoverflow" ).on( "click", function() {
+    openNewTab("https://es.stackoverflow.com/users/182484/andres-felipe-hernandez");
+});
+
+$( ".btn-go-youtube" ).on( "click", function() {
+    openNewTab("https://www.youtube.com/@doctorfhernandez1/videos");
+});
+
+$( ".btn-go-linkedin" ).on( "click", function() {
+    openNewTab("https://www.linkedin.com/in/andr%C3%A9s-felipe-hern%C3%A1ndez-4b12ab83/");
+});
+
+$( ".btn-go-instagram" ).on( "click", function() {
+    openNewTab("https://www.instagram.com/ccc_co_ccc/");
+});
 
 
 /**
