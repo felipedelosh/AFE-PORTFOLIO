@@ -120,8 +120,14 @@ This is a most comond effects in page
 
 .li_white{
     color: white;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.li_about{
+    color: #F85C70;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 
 .a_not_style{
