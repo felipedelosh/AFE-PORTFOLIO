@@ -2,7 +2,7 @@
 <br>
 <h4>PORTFOLIO v2.0</h4>
 
-![Banner](assets\img\banner\hackerman.jpg)
+![Banner](assets/img/banner/banner.jpg)
 :construction: Status of project :construction:
 <br><br>
 This is my personal CV
