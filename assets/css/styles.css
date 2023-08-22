@@ -26,6 +26,10 @@ Header
     background-attachment: fixed;
 }
 
+.header_text_description_afe{
+    margin-top: 8%;
+}
+
 .navbar_text_content{
     color: white;
 }
