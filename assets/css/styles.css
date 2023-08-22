@@ -27,11 +27,13 @@ Header
 }
 
 .header_text_description_afe{
-    margin-top: 8%;
+    margin-top: 5%;
 }
 
 .navbar_text_content{
     color: white;
+    font-family: "Dosis", sans-serif;
+    font-size: calc(30px + (100 - 20) * ((80vw - 260px) / (1800 - 300)));
 }
 
 .btn_downloadCV{
