@@ -85,27 +85,27 @@ function _responsiveRefresh(){
 
 
     if(iphoneMiniH){   
-        alert("MobileOP1 horizontal");
+        alert("NOT Availabe MobileOP1 horizontal");
     }else if(iphoneProH){
-        alert("MobileOP2 horizontal");
+        alert("NOT Availabe MobileOP2 horizontal");
     }else if(iphone5SEH){
-        alert("MobileOP3 horizontal");
+        alert("NOT Availabe MobileOP3 horizontal");
     }else if(iphone678PlUSH){
-        alert("MobileOP4 horizontal");
+        alert("NOT Availabe MobileOP4 horizontal");
     }else if(iphoneXH){
-        alert("MobileOP5 horizontal");
+        alert("NOT Availabe MobileOP5 horizontal");
     }else if(iphoneXRH){
-        alert("MobileOP6 horizontal");
+        alert("NOT Availabe MobileOP6 horizontal");
     }else if(iphoneSEH){
-        alert("MobileOP7 horizontal");
+        alert("NOT Availabe MobileOP7 horizontal");
     }else if(kindleH){
-        alert("MobileOP8 horizontal");
+        alert("NOT Availabe MobileOP8 horizontal");
     }else if(androidBasicH){;
         alert("MobileOP9 horizontal");
     }else if(androidPixelH){
-        alert("MobileOP10 horizontal");
+        alert("NOT Availabe MobileOP10 horizontal");
     }else if(notDisplayH){
-        alert("MobileOP11 horizontal");
+        alert("NOT Availabe MobileOP11 horizontal");
     }else{
         //alert("DEFAULT WINDOW SIZE:\n"+"H:"+_h+";"+"W;"+_w);
         if (_w < 700) {
