@@ -119,6 +119,15 @@ function _responsiveRefresh(){
             $('.about_section_col').css("margin-top", "2%");
             $('.about_section_col').css("margin-bottom", "8%");
             //End About Section
+            //Personal KPI
+            $('.personal_indicators_col').removeClass("col");
+            $('.personal_indicators_col').removeClass("col-6");
+            $('.personal_indicators_col').addClass("col-12");
+            $('.container_ico_kpi_personal').removeClass("col-5");
+            $('.container_text_kpi_personal').removeClass("col-7");
+            $('.container_ico_kpi_personal').addClass("col-6");
+            $('.container_text_kpi_personal').addClass("col-6");
+            //Personal KPI
             //Services
             $('.my_services_col').removeClass("col-4");
             $('.my_services_col').addClass("col-12");
@@ -153,6 +162,15 @@ function _responsiveRefresh(){
             $('.about_section_col').css("margin-top", "none");
             $('.about_section_col').css("margin-bottom", "none");
             //End About Section
+            //Personal KPI
+            $('.personal_indicators_col').removeClass("col");
+            $('.personal_indicators_col').removeClass("col-12");
+            $('.personal_indicators_col').addClass("col-6");
+            $('.container_ico_kpi_personal').removeClass("col-5");
+            $('.container_text_kpi_personal').removeClass("col-7");
+            $('.container_ico_kpi_personal').addClass("col-6");
+            $('.container_text_kpi_personal').addClass("col-6");
+            //Personal KPI
             //Services
             $('.my_services_col').removeClass("col-12");
             $('.my_services_col').removeClass("col-4");
@@ -187,6 +205,15 @@ function _responsiveRefresh(){
             $('.about_section_col').css("margin-top", "none");
             $('.about_section_col').css("margin-bottom", "none");
             //End About Section
+            //Personal KPI
+            $('.personal_indicators_col').removeClass("col-6");
+            $('.personal_indicators_col').removeClass("col-12");
+            $('.personal_indicators_col').addClass("col");
+            $('.container_ico_kpi_personal').addClass("col-5");
+            $('.container_text_kpi_personal').addClass("col-7");
+            $('.container_ico_kpi_personal').removeClass("col-6");
+            $('.container_text_kpi_personal').removeClass("col-6");
+            //Personal KPI
             //Services
             $('.my_services_col').removeClass("col-12");
             $('.my_services_col').removeClass("col-6");
