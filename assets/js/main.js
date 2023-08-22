@@ -117,6 +117,16 @@ function _responsiveRefresh(){
             $('.about_section_col').css("margin-bottom", "8%");
             //End About Section
 
+            //Contact me
+            $('.contact_me_row').removeClass("row");
+            $('.send_me_email_container').removeClass("col");
+            $('.touch_me_part_container').removeClass("col");
+            $('.send_me_email_container').addClass("col-12");
+            $('.send_me_email_container').css("margin-top", "4%");
+            $('.touch_me_part_container').addClass("col-12");
+            $('.touch_me_part_container').css("margin-top", "4%");
+            $('.contact_me_one_touch_social_icons').css("display", "none");
+            //Contact me
             //Footer
             $('.text_footer').removeClass("col-6");
             $('.social_links_footer').removeClass("col-6");
@@ -135,7 +145,16 @@ function _responsiveRefresh(){
             $('.about_section_col').css("margin-bottom", "none");
             //End About Section
 
-
+            //Contact me
+            $('.contact_me_one_touch_social_icons').css("display", "block");
+            $('.send_me_email_container').removeClass("col-12");
+            $('.touch_me_part_container').removeClass("col-12");
+            $('.contact_me_row').addClass("row");
+            $('.send_me_email_container').addClass("col");
+            $('.touch_me_part_container').addClass("col");
+            $('.send_me_email_container').css("margin-top", "none");
+            $('.touch_me_part_container').css("margin-top", "none");   
+            //Contact me
             //Footer
             $('.text_footer').removeClass("col-12");
             $('.social_links_footer').removeClass("col-12");
@@ -154,6 +173,16 @@ function _responsiveRefresh(){
             $('.about_section_col').css("margin-bottom", "none");
             //End About Section
 
+            //Contact me
+            $('.contact_me_one_touch_social_icons').css("display", "block");
+            $('.send_me_email_container').removeClass("col-12");
+            $('.touch_me_part_container').removeClass("col-12");
+            $('.contact_me_row').addClass("row");
+            $('.send_me_email_container').addClass("col");
+            $('.touch_me_part_container').addClass("col");
+            $('.send_me_email_container').css("margin-top", "none");
+            $('.touch_me_part_container').css("margin-top", "none");   
+            //Contact me
             //Footer
             $('.text_footer').removeClass("col-12");
             $('.social_links_footer').removeClass("col-12");
