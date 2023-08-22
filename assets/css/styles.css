@@ -19,7 +19,7 @@ Header
 .header{
     width: 100%;
     height: 80vh;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner/banner.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../img/banner/banner.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
