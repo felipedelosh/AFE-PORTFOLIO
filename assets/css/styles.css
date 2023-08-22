@@ -173,6 +173,19 @@ END Personal Indicators
 My services
 */
 
+.ico_my_services{
+    color: #F85C70;
+    float: left;
+    margin-right: 2%;
+    margin-top: 2%;
+    width: 8%;
+    height: 8%;
+}
+
+.title_my_services{
+    font-weight: bold;
+}
+
 /*!
 END My services
 */
