@@ -5,7 +5,7 @@ https://felipedelosh.github.io/AFE-PORTFOLIO/
 <br><br>
 
 ![Banner](assets/img/banner/banner.jpg)
-:construction: Status of project :construction:
+:construction: in construction :construction:
 <br><br>
 This is my personal CV
 
