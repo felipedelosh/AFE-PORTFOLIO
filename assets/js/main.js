@@ -108,7 +108,10 @@ function _responsiveRefresh(){
         alert("MobileOP11 horizontal");
     }else{
         //alert("DEFAULT WINDOW SIZE:\n"+"H:"+_h+";"+"W;"+_w);
-        if (_w < 700) { 
+        if (_w < 700) {
+            //Header
+
+            //Header            
             //About section
             $('.about_section_row').removeClass("row");
             $('.about_section_col').removeClass("col");
@@ -116,7 +119,12 @@ function _responsiveRefresh(){
             $('.about_section_col').css("margin-top", "2%");
             $('.about_section_col').css("margin-bottom", "8%");
             //End About Section
-
+            //Services
+            $('.my_services_col').removeClass("col-4");
+            $('.my_services_col').addClass("col-12");
+            $('.my_services_col').css("margin-top", "2%");
+            $('.my_services_col').css("margin-bottom", "2%");
+            //Services
             //Contact me
             $('.contact_me_row').removeClass("row");
             $('.send_me_email_container').removeClass("col");
@@ -138,13 +146,20 @@ function _responsiveRefresh(){
             //End Footer
         }else if(_w >= 700 && _w <= 982){
             //About section
+            $('.my_services_col').removeClass("col-6");
             $('.about_section_col').removeClass("col-12");
             $('.about_section_row').addClass("row");
             $('.about_section_col').addClass("col");
             $('.about_section_col').css("margin-top", "none");
             $('.about_section_col').css("margin-bottom", "none");
             //End About Section
-
+            //Services
+            $('.my_services_col').removeClass("col-12");
+            $('.my_services_col').removeClass("col-4");
+            $('.my_services_col').addClass("col-6");
+            $('.my_services_col').css("margin-top", "2%");
+            $('.my_services_col').css("margin-bottom", "2%");
+            //Services
             //Contact me
             $('.contact_me_one_touch_social_icons').css("display", "block");
             $('.send_me_email_container').removeClass("col-12");
@@ -172,7 +187,13 @@ function _responsiveRefresh(){
             $('.about_section_col').css("margin-top", "none");
             $('.about_section_col').css("margin-bottom", "none");
             //End About Section
-
+            //Services
+            $('.my_services_col').removeClass("col-12");
+            $('.my_services_col').removeClass("col-6");
+            $('.my_services_col').addClass("col-4");
+            $('.my_services_col').css("margin-top", "none");
+            $('.my_services_col').css("margin-bottom", "none");
+            //Services
             //Contact me
             $('.contact_me_one_touch_social_icons').css("display", "block");
             $('.send_me_email_container').removeClass("col-12");
