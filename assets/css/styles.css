@@ -213,6 +213,11 @@ Contact me
     margin-bottom: 2%;
 }
 
+.hr_contact_me_separator{
+    width: 20%;
+    color: #F85C70;
+}
+
 .input_area_contact_me{
     width: 100%;
     margin-top: 1%;
@@ -222,6 +227,14 @@ Contact me
 .text_area_contact_me{
     width: 100%;
     resize: none;
+}
+
+.contanct_me_send_email{
+    color: white;
+    background-color: #F85C70;
+    border-color: #F85C70;
+    width: 100%;
+    margin-top: 1%;
 }
 
 /*!
