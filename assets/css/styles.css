@@ -124,6 +124,12 @@ This is a most comond effects in page
     margin-right: 6px;
 }
 
+.li_black{
+    color: black;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
 .li_about{
     color: #F85C70;
     margin-left: 6px;
