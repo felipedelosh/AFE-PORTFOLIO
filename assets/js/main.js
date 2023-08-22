@@ -192,7 +192,7 @@ function _responsiveRefresh(){
             $('.my_services_col').removeClass("col-6");
             $('.my_services_col').addClass("col-4");
             $('.my_services_col').css("margin-top", "none");
-            $('.my_services_col').css("margin-bottom", "none");
+            $('.my_services_col').css("margin-bottom", "2%");
             //Services
             //Contact me
             $('.contact_me_one_touch_social_icons').css("display", "block");
