@@ -229,6 +229,11 @@ Contact me
     resize: none;
 }
 
+.ico_contact_me_one_touch{
+    width: 80%;
+    height: 80%;
+}
+
 .contanct_me_send_email{
     color: white;
     background-color: #F85C70;
@@ -330,17 +335,3 @@ This is a most comond effects in page
 /*!
 END Father Effects
 */
-
-
-/*!
-======================================================
-*/
-.btn-bottom-floating{
-    height: 50px;
-    width: 50px;
-	position: fixed;
-	bottom: 10%;
-	right: 10%;
-	transition: all 300ms ease 0ms;
-	z-index: 99;
-}

@@ -116,6 +116,16 @@ function _responsiveRefresh(){
             $('.about_section_col').css("margin-top", "2%");
             $('.about_section_col').css("margin-bottom", "8%");
             //End About Section
+
+            //Footer
+            $('.text_footer').removeClass("col-6");
+            $('.social_links_footer').removeClass("col-6");
+            $('.text_footer').addClass("col-12");
+            $('.social_links_footer').addClass("col-12");
+            $('.ul_footer_links').removeClass("justify-content-end");
+            $('.text_footer').addClass("text-center");
+            $('.ul_footer_links').addClass("justify-content-center");
+            //End Footer
         }else if(_w >= 700 && _w <= 982){
             //About section
             $('.about_section_col').removeClass("col-12");
@@ -124,6 +134,17 @@ function _responsiveRefresh(){
             $('.about_section_col').css("margin-top", "none");
             $('.about_section_col').css("margin-bottom", "none");
             //End About Section
+
+
+            //Footer
+            $('.text_footer').removeClass("col-12");
+            $('.social_links_footer').removeClass("col-12");
+            $('.text_footer').removeClass("text-center");
+            $('.ul_footer_links').removeClass("justify-content-center");
+            $('.ul_footer_links').addClass("justify-content-end");
+            $('.text_footer').addClass("col-6");
+            $('.social_links_footer').addClass("col-6");
+            //End Footer
         }else if(_w > 982){
             //About section
             $('.about_section_col').removeClass("col-12");
@@ -132,6 +153,16 @@ function _responsiveRefresh(){
             $('.about_section_col').css("margin-top", "none");
             $('.about_section_col').css("margin-bottom", "none");
             //End About Section
+
+            //Footer
+            $('.text_footer').removeClass("col-12");
+            $('.social_links_footer').removeClass("col-12");
+            $('.text_footer').removeClass("text-center");
+            $('.ul_footer_links').removeClass("justify-content-center");
+            $('.ul_footer_links').addClass("justify-content-end");
+            $('.text_footer').addClass("col-6");
+            $('.social_links_footer').addClass("col-6");
+            //End Footer
         }
     }
 }
