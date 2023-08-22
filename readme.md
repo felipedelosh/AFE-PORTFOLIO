@@ -16,7 +16,7 @@ This is my personal CV
 
 ## :play_or_pause_button:How to execute a project
 
-Double click in index.html file or enter url
+Double click in index.html file or enter https://felipedelosh.github.io/AFE-PORTFOLIO/
 
 ## :hammer_and_wrench:Tecnologías.
 
