@@ -108,6 +108,31 @@ function _responsiveRefresh(){
         alert("MobileOP11 horizontal");
     }else{
         //alert("DEFAULT WINDOW SIZE:\n"+"H:"+_h+";"+"W;"+_w);
+        if (_w < 700) { 
+            //About section
+            $('.about_section_row').removeClass("row");
+            $('.about_section_col').removeClass("col");
+            $('.about_section_col').addClass("col-12");
+            $('.about_section_col').css("margin-top", "2%");
+            $('.about_section_col').css("margin-bottom", "8%");
+            //End About Section
+        }else if(_w >= 700 && _w <= 982){
+            //About section
+            $('.about_section_col').removeClass("col-12");
+            $('.about_section_row').addClass("row");
+            $('.about_section_col').addClass("col");
+            $('.about_section_col').css("margin-top", "none");
+            $('.about_section_col').css("margin-bottom", "none");
+            //End About Section
+        }else if(_w > 982){
+            //About section
+            $('.about_section_col').removeClass("col-12");
+            $('.about_section_row').addClass("row");
+            $('.about_section_col').addClass("col");
+            $('.about_section_col').css("margin-top", "none");
+            $('.about_section_col').css("margin-bottom", "none");
+            //End About Section
+        }
     }
 }
 

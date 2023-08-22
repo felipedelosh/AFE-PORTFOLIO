@@ -59,6 +59,46 @@ Header
 End Header
 */
 
+/*!
+=======================================================================
+*/
+
+/*!
+About
+*/
+
+.about_section{
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.btn_download_my_cv_from_about{
+    color: #F85C70;
+    border-color: #F85C70;
+    background-color: transparent;
+}
+
+.about_skill_ico{
+    padding-top: 30%;
+    color: #F85C70;
+}
+
+.about_skill_description{
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: black;
+}
+
+
+
+/*!
+END About
+*/
+
+/*!
+=======================================================================
+*/
+
 
 
 /*!
