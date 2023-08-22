@@ -100,7 +100,7 @@ function _responsiveRefresh(){
         alert("NOT Availabe MobileOP7 horizontal");
     }else if(kindleH){
         alert("NOT Availabe MobileOP8 horizontal");
-    }else if(androidBasicH){;
+    }else if(androidBasicH){
         alert("MobileOP9 horizontal");
     }else if(androidPixelH){
         alert("NOT Availabe MobileOP10 horizontal");
