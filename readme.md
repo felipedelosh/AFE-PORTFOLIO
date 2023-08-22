@@ -29,7 +29,7 @@ Double click in index.html file or enter https://felipedelosh.github.io/AFE-PORT
 
 ## :warning:Advertencia
 
-- It´s only fot free GITHUB storage
+- It´s only fot free GITHUB storage not hav backend tecnologies.
 
 ## Autor
 
