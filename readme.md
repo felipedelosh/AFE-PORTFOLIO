@@ -1,8 +1,8 @@
 <h1 align="center">FelipedelosH</h1>
 <br>
-<h4>PORTFOLIO v2.0</h4><br>
+<h4>PORTFOLIO v2.0</h4>
 https://felipedelosh.github.io/AFE-PORTFOLIO/ 
-<br>
+<br><br>
 
 ![Banner](assets/img/banner/banner.jpg)
 :construction: Status of project :construction:
