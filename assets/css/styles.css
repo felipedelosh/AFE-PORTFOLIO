@@ -35,7 +35,13 @@ Header
 }
 
 .btn_downloadCV{
+    display: inline-block;
     background-color: #f63750;
+    border-radius: 100px;
+    color: white;
+    border-color: #F85C70;
+    margin-top: 1%;
+    padding: 0.375rem 0.75rem;
 }
 
 .nav_link{
