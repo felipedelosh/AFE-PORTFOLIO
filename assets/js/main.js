@@ -148,7 +148,8 @@ function _responsiveRefresh(){
         //alert("DEFAULT WINDOW SIZE:\n"+"H:"+_h+";"+"W;"+_w);
         if (_w < 700) {
             //Header
-
+            $('.menu_navbar_desktop').css("display", "none");
+            $('.menu_navbar_mobile').css("display", "block");
             //Header            
             //About section
             $('.about_section_row').removeClass("row");
@@ -205,6 +206,10 @@ function _responsiveRefresh(){
             $('.ul_footer_links').addClass("justify-content-center");
             //End Footer
         }else if(_w >= 700 && _w <= 982){
+            //Header
+            $('.menu_navbar_desktop').css("display", "flex");
+            $('.menu_navbar_mobile').css("display", "none");
+            //Header  
             //About section
             $('.my_services_col').removeClass("col-6");
             $('.about_section_col').removeClass("col-12");
@@ -262,6 +267,10 @@ function _responsiveRefresh(){
             $('.social_links_footer').addClass("col-6");
             //End Footer
         }else if(_w > 982){
+            //Header
+            $('.menu_navbar_desktop').css("display", "flex");
+            $('.menu_navbar_mobile').css("display", "none");
+            //Header
             //About section
             $('.about_section_col').removeClass("col-12");
             $('.about_section_row').addClass("row");
