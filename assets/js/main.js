@@ -135,34 +135,25 @@ function _responsiveRefresh(){
 
 
     if(iphoneMiniH){   
-        alert("Mobile iphone mini h");
-        _responsiveConfigMobileH();
+        _responsiveConfigMobileDefaultH();
     }else if(iphoneProH){
-        alert("Mobile iphone pro");
-        _responsiveConfigMobileH();
+        _responsiveConfigMobileDefaultH();
     }else if(iphone5SEH){
-        alert("Mobile iphone s5");
-        _responsiveConfigMobileH();
+        _responsiveConfigMobileDefaultH();
     }else if(iphone678PlUSH){
         _responsiveConfigMobileDefaultH();
     }else if(iphoneXH){
-        alert("Mobile iphone xh");
-        _responsiveConfigMobileH();
+        _responsiveConfigMobileDefaultH();
     }else if(iphoneXRH){
-        alert("Mobile iphone xrh");
-        _responsiveConfigMobileH();
+        _responsiveConfigMobileDefaultH();
     }else if(iphoneSEH){
-        alert("Mobile iphone seh");
-        _responsiveConfigMobileH();
+        _responsiveConfigMobileDefaultH();
     }else if(kindleH){
-        alert("Mobile kindle");
-        _responsiveConfigMobileH();
+        _responsiveConfigMobileDefaultH();
     }else if(androidBasicH){
-        alert("Mobile android");
-        _responsiveConfigMobileH();
+        _responsiveConfigMobileDefaultH();
     }else if(androidPixelH){
-        alert("Mobile pixel");
-        _responsiveConfigMobileH();
+        _responsiveConfigMobileDefaultH();
     }else if(notDisplayH){
         alert("NOT Availabe IN YOU MOBILE");
     }else{
@@ -182,7 +173,6 @@ function _responsiveConfigMobileDefaultH(){
     $('.menu_navbar_desktop').css("display", "none");
     $('.menu_navbar_mobile').css("display", "block");
     $('.header').css("height", "50vh");
-    
     _hideShowAvatarPicController();
     //Header
     //About section
