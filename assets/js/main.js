@@ -135,25 +135,25 @@ function _responsiveRefresh(){
 
 
     if(iphoneMiniH){   
-        _responsiveConfigMobileV();
+        _responsiveConfigMobileH();
     }else if(iphoneProH){
-        _responsiveConfigMobileV();
+        _responsiveConfigMobileH();
     }else if(iphone5SEH){
-        _responsiveConfigMobileV();
+        _responsiveConfigMobileH();
     }else if(iphone678PlUSH){
-        _responsiveConfigMobileV();
+        _responsiveConfigMobileH();
     }else if(iphoneXH){
-        _responsiveConfigMobileV();
+        _responsiveConfigMobileH();
     }else if(iphoneXRH){
-        _responsiveConfigMobileV();
+        _responsiveConfigMobileH();
     }else if(iphoneSEH){
-        _responsiveConfigMobileV();
+        _responsiveConfigMobileH();
     }else if(kindleH){
-        _responsiveConfigMobileV();
+        _responsiveConfigMobileH();
     }else if(androidBasicH){
-        _responsiveConfigMobileV();
+        _responsiveConfigMobileH();
     }else if(androidPixelH){
-        _responsiveConfigMobileV();
+        _responsiveConfigMobileH();
     }else if(notDisplayH){
         alert("NOT Availabe IN YOU MOBILE");
     }else{
