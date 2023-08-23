@@ -33,19 +33,47 @@ $( ".btn-go-instagram" ).on( "click", function() {
 /**
  * hover
  */
-$( ".class_element" ).hover(function() {
-    //If element hover
+$( ".nav_link_go_home" ).hover(function() {
+    $('.nav_link_go_home').css("color", "#f85c70");
 }).mouseleave(function() {  
-    //If element not hover
+    $('.nav_link_go_home').css("color", "black");
 });
 
+$( ".nav_link_go_about" ).hover(function() {
+    $('.nav_link_go_about').css("color", "#f85c70");
+}).mouseleave(function() {  
+    $('.nav_link_go_about').css("color", "black");
+});
+
+$( ".nav_link_go_resume" ).hover(function() {
+    $('.nav_link_go_resume').css("color", "#f85c70");
+}).mouseleave(function() {  
+    $('.nav_link_go_resume').css("color", "black");
+});
+
+$( ".nav_link_go_portfolio" ).hover(function() {
+    $('.nav_link_go_portfolio').css("color", "#f85c70");
+}).mouseleave(function() {  
+    $('.nav_link_go_portfolio').css("color", "black");
+});
+
+$( ".nav_link_go_blog" ).hover(function() {
+    $('.nav_link_go_blog').css("color", "#f85c70");
+}).mouseleave(function() {  
+    $('.nav_link_go_blog').css("color", "black");
+});
+
+$( ".nav_link_go_contact" ).hover(function() {
+    $('.nav_link_go_contact').css("color", "#f85c70");
+}).mouseleave(function() {  
+    $('.nav_link_go_contact').css("color", "black");
+});
 
 
 /**
  * Enter a URL and open in new tab
  * @param {*} url 
  */
-
 function openNewTab(url){
     var win = window.open(url, '_blank');
     win.focus();
