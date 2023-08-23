@@ -219,7 +219,7 @@ function _responsiveConfigMobileDefaultH(){
     $('.container_text_kpi_personal').addClass("col-6");
     $('.ico_kpi_personal').css("width", "100%");
     $('.ico_kpi_personal').css("height", "50%");
-    $('.personal_indicators').css("padding", "40px 0");
+    $('.personal_indicators').css("padding", "20px 0");
     //Personal KPI
     //Services
     $('.my_services_col').removeClass("col-4");
@@ -286,7 +286,7 @@ function _responsiveConfigMobileH(){
     $('.container_text_kpi_personal').addClass("col-6");
     $('.ico_kpi_personal').css("width", "100%");
     $('.ico_kpi_personal').css("height", "50%");
-    $('.personal_indicators').css("padding", "40px 0");
+    $('.personal_indicators').css("padding", "20px 0");
     //Personal KPI
     //Services
     $('.my_services_col').removeClass("col-4");
@@ -426,7 +426,7 @@ function _responsiveConfigDesktop(){
     $('.container_text_kpi_personal').removeClass("col-6");
     $('.ico_kpi_personal').css("width", "100%");
     $('.ico_kpi_personal').css("height", "100%");
-    $('.personal_indicators').css("padding", "80px 0");
+    $('.personal_indicators').css("padding", "40px 0");
     //Personal KPI
     //Services
     $('.my_services_col').removeClass("col-12");
