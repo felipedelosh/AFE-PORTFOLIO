@@ -1,7 +1,7 @@
 /**
  * FelipedelosH
  * 2023
- */
+*/
 
 //INTERNAL LINKS
 $( ".btn-to-click" ).on( "click", function() {
@@ -32,7 +32,7 @@ $( ".btn-go-instagram" ).on( "click", function() {
 
 /**
  * hover
- */
+*/
 $( ".nav_link_go_home" ).hover(function() {
     $('.nav_link_go_home').css("color", "#f85c70");
 }).mouseleave(function() {  
@@ -73,7 +73,7 @@ $( ".nav_link_go_contact" ).hover(function() {
 /**
  * Enter a URL and open in new tab
  * @param {*} url 
- */
+*/
 function openNewTab(url){
     var win = window.open(url, '_blank');
     win.focus();
@@ -90,7 +90,7 @@ function openHTML(url){
 
 /**
  * MediaQuery
- */
+*/
 
 $(window).scroll(function(){
     _hideShowAvatarPicController();
@@ -184,6 +184,8 @@ function _responsiveRefresh(){
             $('.container_text_kpi_personal').removeClass("col-7");
             $('.container_ico_kpi_personal').addClass("col-6");
             $('.container_text_kpi_personal').addClass("col-6");
+            $('.ico_kpi_personal').css("width", "100%");
+            $('.ico_kpi_personal').css("height", "50%");
             //Personal KPI
             //Services
             $('.my_services_col').removeClass("col-4");
@@ -245,6 +247,8 @@ function _responsiveRefresh(){
             $('.container_text_kpi_personal').removeClass("col-7");
             $('.container_ico_kpi_personal').addClass("col-6");
             $('.container_text_kpi_personal').addClass("col-6");
+            $('.ico_kpi_personal').css("width", "70%");
+            $('.ico_kpi_personal').css("height", "70%");
             //Personal KPI
             //Services
             $('.my_services_col').removeClass("col-12");
@@ -306,6 +310,8 @@ function _responsiveRefresh(){
             $('.container_text_kpi_personal').addClass("col-7");
             $('.container_ico_kpi_personal').removeClass("col-6");
             $('.container_text_kpi_personal').removeClass("col-6");
+            $('.ico_kpi_personal').css("width", "100%");
+            $('.ico_kpi_personal').css("height", "100%");
             //Personal KPI
             //Services
             $('.my_services_col').removeClass("col-12");
