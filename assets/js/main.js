@@ -159,7 +159,7 @@ function _responsiveRefresh(){
     }else{
         //alert("DEFAULT WINDOW SIZE:\n"+"H:"+_h+";"+"W;"+_w);
         if (_w < 700) {
-            _responsiveConfigMobileV();
+            _responsiveConfigMobileH();
         }else if(_w >= 700 && _w <= 982){
             _responsiveConfigTablet();
         }else if(_w > 982){
@@ -169,10 +169,6 @@ function _responsiveRefresh(){
 }
 
 function _responsiveConfigMobileH(){
-
-}
-
-function _responsiveConfigMobileV(){
     //Header
     $('.menu_navbar_desktop').css("display", "none");
     $('.menu_navbar_mobile').css("display", "block");
@@ -234,6 +230,10 @@ function _responsiveConfigMobileV(){
     $('.text_footer').addClass("text-center");
     $('.ul_footer_links').addClass("justify-content-center");
     //End Footer
+}
+
+function _responsiveConfigMobileV(){
+
 }
 
 function _responsiveConfigTablet(){
