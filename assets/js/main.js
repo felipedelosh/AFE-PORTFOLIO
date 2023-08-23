@@ -168,6 +168,7 @@ function _responsiveRefresh(){
         _responsiveConfigMobileDefaultH();
     }else if(notDisplayH){
         alert("NOT Availabe IN YOU MOBILE");
+        _responsiveConfigMobileDefaultH();
     }else{
         //alert("DEFAULT WINDOW SIZE:\n"+"H:"+_h+";"+"W;"+_w);
         if (_w < 700) {

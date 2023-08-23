@@ -35,6 +35,19 @@ Header
     background-color: white;
 }
 
+.text_description_afe_01{
+  margin-top: 0;
+}
+
+.text_description_afe_02{
+  font-size: calc(30px + (100 - 20) * ((80vw - 260px) / (1800 - 300)));
+  line-height: .7;
+}
+
+.text_description_afe_03{
+  margin-top: 0;
+}
+
 
 /*!
 DOWNLOAD CV IN SPACE
@@ -451,7 +464,6 @@ END MENU MOBILE
 .navbar_text_content{
     color: white;
     font-family: "Dosis", sans-serif;
-    font-size: calc(30px + (100 - 20) * ((80vw - 260px) / (1800 - 300)));
 }
 
 .nav_link{
