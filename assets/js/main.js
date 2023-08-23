@@ -135,24 +135,34 @@ function _responsiveRefresh(){
 
 
     if(iphoneMiniH){   
+        alert("Mobile iphone mini h");
         _responsiveConfigMobileH();
     }else if(iphoneProH){
+        alert("Mobile iphone pro");
         _responsiveConfigMobileH();
     }else if(iphone5SEH){
+        alert("Mobile iphone s5");
         _responsiveConfigMobileH();
     }else if(iphone678PlUSH){
+        alert("Mobile iphone 678 plus");
         _responsiveConfigMobileH();
     }else if(iphoneXH){
+        alert("Mobile iphone xh");
         _responsiveConfigMobileH();
     }else if(iphoneXRH){
+        alert("Mobile iphone xrh");
         _responsiveConfigMobileH();
     }else if(iphoneSEH){
+        alert("Mobile iphone seh");
         _responsiveConfigMobileH();
     }else if(kindleH){
+        alert("Mobile kindle");
         _responsiveConfigMobileH();
     }else if(androidBasicH){
+        alert("Mobile android");
         _responsiveConfigMobileH();
     }else if(androidPixelH){
+        alert("Mobile pixel");
         _responsiveConfigMobileH();
     }else if(notDisplayH){
         alert("NOT Availabe IN YOU MOBILE");
