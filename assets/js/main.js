@@ -37,6 +37,18 @@ $( ".btn-go-instagram" ).on( "click", function() {
     openNewTab("https://www.instagram.com/ccc_co_ccc/");
 });
 
+$( ".link-go-hospitalHDSRR" ).on( "click", function() {
+    openNewTab("http://www.esehospitalsanrafael.gov.co/");
+});
+
+$( ".link-go-netactica" ).on( "click", function() {
+    openNewTab("https://www.netactica.com/");
+});
+
+$( ".link-go-rebold" ).on( "click", function() {
+    openNewTab("https://letsrebold.com/es/");
+});
+
 
 /**
  * hover
