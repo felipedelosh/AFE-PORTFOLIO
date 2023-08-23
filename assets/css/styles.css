@@ -26,6 +26,10 @@ Header
     background-attachment: fixed;
 }
 
+.ul_header_social_links_icons{
+ padding-top: 2%;
+}
+
 .navbar_menu{
     border-bottom: 1px solid #bababb !important;
     background-color: white;

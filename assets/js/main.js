@@ -144,8 +144,7 @@ function _responsiveRefresh(){
         alert("Mobile iphone s5");
         _responsiveConfigMobileH();
     }else if(iphone678PlUSH){
-        alert("Mobile iphone 678 plus");
-        _responsiveConfigMobileH();
+        _responsiveConfigMobileDefaultH();
     }else if(iphoneXH){
         alert("Mobile iphone xh");
         _responsiveConfigMobileH();
@@ -178,10 +177,77 @@ function _responsiveRefresh(){
     }
 }
 
+function _responsiveConfigMobileDefaultH(){
+    //Header
+    $('.menu_navbar_desktop').css("display", "none");
+    $('.menu_navbar_mobile').css("display", "block");
+    $('.header').css("height", "50vh");
+    
+    _hideShowAvatarPicController();
+    //Header
+    //About section
+    $('.about_section_row').removeClass("row");
+    $('.about_section_col').removeClass("col");
+    $('.about_section_col').addClass("col-12");
+    $('.about_section_col').css("margin-top", "2%");
+    $('.about_section_col').css("margin-bottom", "8%");
+    $('.about_skill_ico').css("width", "80%");
+    $('.about_skill_ico').css("height", "80%");
+    //End About Section
+    //resume
+    $('.my_resume_expertice').removeClass("col");
+    $('.my_resume_expertice').css("margin-bottom", "2%");
+    $('.my_resume_expertice').addClass("col-12");
+    $('.my_resume_education').removeClass("col");
+    $('.my_resume_education').css("margin-bottom", "2%");
+    $('.my_resume_education').addClass("col-12");
+    $('.my_resume_skills').removeClass("col");
+    $('.my_resume_skills').css("margin-bottom", "2%");
+    $('.my_resume_skills').addClass("col-12");
+    //resume
+    //Personal KPI
+    $('.personal_indicators_col').removeClass("col");
+    $('.personal_indicators_col').removeClass("col-6");
+    $('.personal_indicators_col').addClass("col-12");
+    $('.container_ico_kpi_personal').removeClass("col-5");
+    $('.container_text_kpi_personal').removeClass("col-7");
+    $('.container_ico_kpi_personal').addClass("col-6");
+    $('.container_text_kpi_personal').addClass("col-6");
+    $('.ico_kpi_personal').css("width", "100%");
+    $('.ico_kpi_personal').css("height", "50%");
+    //Personal KPI
+    //Services
+    $('.my_services_col').removeClass("col-4");
+    $('.my_services_col').addClass("col-12");
+    $('.my_services_col').css("margin-top", "2%");
+    $('.my_services_col').css("margin-bottom", "2%");
+    //Services
+    //Contact me
+    $('.contact_me_row').removeClass("row");
+    $('.send_me_email_container').removeClass("col");
+    $('.touch_me_part_container').removeClass("col");
+    $('.send_me_email_container').addClass("col-12");
+    $('.send_me_email_container').css("margin-top", "4%");
+    $('.touch_me_part_container').addClass("col-12");
+    $('.touch_me_part_container').css("margin-top", "4%");
+    $('.contact_me_one_touch_social_icons').css("display", "none");
+    //Contact me
+    //Footer
+    $('.text_footer').removeClass("col-6");
+    $('.social_links_footer').removeClass("col-6");
+    $('.text_footer').addClass("col-12");
+    $('.social_links_footer').addClass("col-12");
+    $('.ul_footer_links').removeClass("justify-content-end");
+    $('.text_footer').addClass("text-center");
+    $('.ul_footer_links').addClass("justify-content-center");
+    //End Footer
+}
+
 function _responsiveConfigMobileH(){
     //Header
     $('.menu_navbar_desktop').css("display", "none");
     $('.menu_navbar_mobile').css("display", "block");
+    $('.header').css("height", "80vh");
     _hideShowAvatarPicController();
     //Header            
     //About section
@@ -250,6 +316,7 @@ function _responsiveConfigTablet(){
     //Header
     $('.menu_navbar_desktop').css("display", "flex");
     $('.menu_navbar_mobile').css("display", "none");
+    $('.header').css("height", "80vh");
     _hideShowAvatarPicController();
     //Header  
     //About section
@@ -316,6 +383,7 @@ function _responsiveConfigDesktop(){
     //Header
     $('.menu_navbar_desktop').css("display", "flex");
     $('.menu_navbar_mobile').css("display", "none");
+    $('.header').css("height", "80vh");
     _hideShowAvatarPicController();
     //Header
     //About section
