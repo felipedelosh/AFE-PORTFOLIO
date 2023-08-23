@@ -643,6 +643,9 @@ END About
 /*!
 My Resume
 */
+.mb-3{
+  margin-bottom: none;
+}
 
 /*!
 END My resume
