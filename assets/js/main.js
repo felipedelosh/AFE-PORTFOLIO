@@ -156,6 +156,8 @@ function _responsiveRefresh(){
             $('.about_section_col').addClass("col-12");
             $('.about_section_col').css("margin-top", "2%");
             $('.about_section_col').css("margin-bottom", "8%");
+            $('.about_skill_ico').css("width", "80%");
+            $('.about_skill_ico').css("height", "80%");
             //End About Section
             //resume
             $('.my_resume_expertice').removeClass("col");
@@ -210,6 +212,8 @@ function _responsiveRefresh(){
             $('.about_section_col').addClass("col");
             $('.about_section_col').css("margin-top", "none");
             $('.about_section_col').css("margin-bottom", "none");
+            $('.about_skill_ico').css("width", "100%");
+            $('.about_skill_ico').css("height", "100%");
             //End About Section
             //resume
             $('.my_resume_expertice').removeClass("col");
@@ -264,6 +268,8 @@ function _responsiveRefresh(){
             $('.about_section_col').addClass("col");
             $('.about_section_col').css("margin-top", "none");
             $('.about_section_col').css("margin-bottom", "none");
+            $('.about_skill_ico').css("width", "none");
+            $('.about_skill_ico').css("height", "none");
             //End About Section
             //resume
             $('.my_resume_expertice').removeClass("col-12");
