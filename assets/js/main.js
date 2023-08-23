@@ -157,6 +157,17 @@ function _responsiveRefresh(){
             $('.about_section_col').css("margin-top", "2%");
             $('.about_section_col').css("margin-bottom", "8%");
             //End About Section
+            //resume
+            $('.my_resume_expertice').removeClass("col");
+            $('.my_resume_expertice').css("margin-bottom", "2%");
+            $('.my_resume_expertice').addClass("col-12");
+            $('.my_resume_education').removeClass("col");
+            $('.my_resume_education').css("margin-bottom", "2%");
+            $('.my_resume_education').addClass("col-12");
+            $('.my_resume_skills').removeClass("col");
+            $('.my_resume_skills').css("margin-bottom", "2%");
+            $('.my_resume_skills').addClass("col-12");
+            //resume
             //Personal KPI
             $('.personal_indicators_col').removeClass("col");
             $('.personal_indicators_col').removeClass("col-6");
@@ -200,6 +211,17 @@ function _responsiveRefresh(){
             $('.about_section_col').css("margin-top", "none");
             $('.about_section_col').css("margin-bottom", "none");
             //End About Section
+            //resume
+            $('.my_resume_expertice').removeClass("col");
+            $('.my_resume_expertice').css("margin-bottom", "2%");
+            $('.my_resume_expertice').addClass("col-12");
+            $('.my_resume_education').removeClass("col");
+            $('.my_resume_education').css("margin-bottom", "2%");
+            $('.my_resume_education').addClass("col-12");
+            $('.my_resume_skills').removeClass("col");
+            $('.my_resume_skills').css("margin-bottom", "2%");
+            $('.my_resume_skills').addClass("col-12");
+            //resume
             //Personal KPI
             $('.personal_indicators_col').removeClass("col");
             $('.personal_indicators_col').removeClass("col-12");
@@ -243,6 +265,17 @@ function _responsiveRefresh(){
             $('.about_section_col').css("margin-top", "none");
             $('.about_section_col').css("margin-bottom", "none");
             //End About Section
+            //resume
+            $('.my_resume_expertice').removeClass("col-12");
+            $('.my_resume_expertice').addClass("col");
+            $('.my_resume_expertice').css("margin-bottom", "none");
+            $('.my_resume_education').removeClass("col-12");
+            $('.my_resume_education').addClass("col");
+            $('.my_resume_education').css("margin-bottom", "none");
+            $('.my_resume_skills').removeClass("col-12");
+            $('.my_resume_skills').addClass("col");
+            $('.my_resume_skills').css("margin-bottom", "none");
+            //resume
             //Personal KPI
             $('.personal_indicators_col').removeClass("col-6");
             $('.personal_indicators_col').removeClass("col-12");
