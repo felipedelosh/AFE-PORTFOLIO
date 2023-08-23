@@ -8,6 +8,14 @@ $( ".btn-to-click" ).on( "click", function() {
     //action
 });
 
+$( ".btn_downloadCV" ).on( "click", function() {
+    openLocalTab("DOWNLOAD/cv.pdf");
+});
+
+$( ".btn_download_my_cv_from_about" ).on( "click", function() {
+    openLocalTab("DOWNLOAD/cv.pdf");
+});
+
 //EXTERNAL LINKS
 $( ".btn-go-github" ).on( "click", function() {
     openNewTab("https://github.com/felipedelosh");
