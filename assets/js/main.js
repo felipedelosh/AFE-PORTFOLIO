@@ -186,6 +186,7 @@ function _responsiveConfigMobileDefaultH(){
     $('.menu_navbar_desktop').css("display", "none");
     $('.menu_navbar_mobile').css("display", "block");
     $('.header').css("height", "50vh");
+    $('.navbar_text_content').css("margin-top", "20%");
     _hideShowAvatarPicController();
     //Header
     //About section
@@ -252,6 +253,7 @@ function _responsiveConfigMobileH(){
     $('.menu_navbar_desktop').css("display", "none");
     $('.menu_navbar_mobile').css("display", "block");
     $('.header').css("height", "80vh");
+    $('.navbar_text_content').css("margin-top", "20%");
     _hideShowAvatarPicController();
     //Header            
     //About section
@@ -322,6 +324,7 @@ function _responsiveConfigTablet(){
     $('.menu_navbar_desktop').css("display", "flex");
     $('.menu_navbar_mobile').css("display", "none");
     $('.header').css("height", "80vh");
+    $('.navbar_text_content').css("margin-top", "10%");
     _hideShowAvatarPicController();
     //Header  
     //About section
@@ -390,6 +393,7 @@ function _responsiveConfigDesktop(){
     $('.menu_navbar_desktop').css("display", "flex");
     $('.menu_navbar_mobile').css("display", "none");
     $('.header').css("height", "80vh");
+    $('.navbar_text_content').css("margin-top", "2%");
     _hideShowAvatarPicController();
     //Header
     //About section
