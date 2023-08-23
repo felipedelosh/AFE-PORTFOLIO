@@ -161,7 +161,7 @@ function _responsiveRefresh(){
     }else if(iphoneSEH){
         _responsiveConfigMobileDefaultH();
     }else if(kindleH){
-        _responsiveConfigMobileDefaultH();
+        _responsiveConfigTablet();
     }else if(androidBasicH){
         _responsiveConfigMobileDefaultH();
     }else if(androidPixelH){
