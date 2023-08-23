@@ -91,6 +91,16 @@ function openHTML(url){
 /**
  * MediaQuery
  */
+
+$(window).scroll(function(){
+    let _imgPos = $('.menu_navbar_desktop').offset().top;
+    if(_imgPos<=$(this).scrollTop()){
+        $('.img_avatar').css("display", "none");
+    }else{
+        $('.img_avatar').css("display", "block");
+    }
+});
+
 $(window).resize(function(){
     _responsiveRefresh();
 });
