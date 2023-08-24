@@ -10,7 +10,7 @@ $('.portfolio-items').isotope({
     layoutMode: 'fitRows'
 });
 //Click Isotope 
-$('.li_portfolio').click(function(){
+$('.li_portfolio').on("click", function(){
     $('.li_portfolio').removeClass("active");
     $(this).addClass("active");
     
@@ -21,7 +21,15 @@ $('.li_portfolio').click(function(){
     });
     return false;
 });
+$( "#eyeOpen" ).on( "click", function() {
+    hideOrShowPortFolioItems();
+});
+$( "#eyeClose" ).on( "click", function() {
+    hideOrShowPortFolioItems();
+});
 //END Click Portfolio items
+
+
 
 //INTERNAL LINKS
 $( ".btn-to-click" ).on( "click", function() {
@@ -496,4 +504,36 @@ function _responsiveConfigDesktop(){
     //End Footer
 }
 
+function hideOrShowPortFolioItems(){
+    if(!$('#show_hide_portfolio-items').is(':checked')){
+        _hidePortFolioItems();
+    }else{
+        _showPortFolioItems();
+    }
+}
+function _hidePortFolioItems(){
+    $('.portfolio-items').css("display", "none");
+}
+function _showPortFolioItems(){
+    $('.portfolio-items').css("display", "block");
+    $('.li_portfolio_show_all').click();
+}
+
+
+/**
+ * When the page is open new close all projects
+ * same if reload
+ */
+function _closeEYE(){
+    if($('#show_hide_portfolio-items').is(':checked')){
+        _hidePortFolioItems();
+    }else{
+        $('.container_eye').click();
+        _hidePortFolioItems();
+    }
+}
+
+
+
 _responsiveRefresh();
+_closeEYE();
