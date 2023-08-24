@@ -227,6 +227,11 @@ function _responsiveConfigMobileDefaultH(){
     $('.my_services_col').css("margin-top", "2%");
     $('.my_services_col').css("margin-bottom", "2%");
     //Services
+    //PORTFOLIO
+    $('.item').removeClass("col-4");
+    $('.item').removeClass("col-6");
+    $('.item').addClass("col-12");
+    //PORTFOLIO
     //Contact me
     $('.contact_me_row').removeClass("row");
     $('.send_me_email_container').removeClass("col");
