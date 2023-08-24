@@ -546,7 +546,60 @@
   <!-- My Portfolio Section-->
   <div id="portfolio" class="my_portfolio">
     <div class="container">
-        <p class="h1">Port folio In Construction</p>
+        <p class="h1">My Portfolio</p>
+        <br>
+        <!-- This is the core of isotope-->
+        <!-- Note: download jquery and isotope, configure a css and the put controller in script -->
+        <!-- ISOTOPE PICTURES VIEW-->
+        <!-- Control menu -->
+        <div class="portfolio-menu">
+            <ul>
+                <li class="active" data-filter="*">
+                    ALL
+                </li>
+                <li data-filter=".web">WEB</li>
+                <li data-filter=".code">CODE</li>
+                <li data-filter=".script">SCRIPT</li>
+            </ul>
+        </div>
+        <!-- Only Asociate a images to menu -->
+        <div class="portfolio-items">
+            <div class="item col-4 web">
+                <div class="card">
+                    <img class="card-img-top" src="assets\img\gallery\web0.jpg" alt="POP singer landing">
+                    <div class="card-body">
+                      <h5 class="card-title"><b>Landing POP Singer</b></h5>
+                      <p class="card-text">Write in HTML+CSS+Js is a SPA to promotionate a pop singer.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-4 web">
+                <div class="card">
+                    <img class="card-img-top" src="assets\img\gallery\web1.jpg" alt="Portfolio landing">
+                    <div class="card-body">
+                      <h5 class="card-title"><b>Portfolio</b></h5>
+                      <p class="card-text">My personal portfolio 100% write with ChatGPT.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item col-4 script">
+                <div class="card">
+                    <img class="card-img-top" src="assets\img\gallery\script0.jpg" alt="python convert excel to sql">
+                    <div class="card-body">
+                      <h5 class="card-title"><b>Python Excel to .sql</b></h5>
+                      <p class="card-text">Convert ALL data to excel into .sql using PANDAS</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END ISOTOPE PICTURES VIEW-->
+        <!-- GO to END of HTML to Insert isotope.js -->
+        <!-- Insert isotope.js after jquery -->
+        <!-- init isotope.js and configure controller -->
     </div>
   </div>
   <!-- Blog Section-->
@@ -705,6 +758,10 @@
   <!-- core  -->
   <script src="assets\js\bootstrap.js"></script>
   <script src="assets\vendors\jquery\jquery.js"></script>
+  <!-- ISOTOPE  -->
+  <script src="assets\vendors\isotope\isotope.pkgd.js"></script>
+  <script src="assets\js\portfolio.isotope.controller.js"></script>
+  <!-- END ISOTOPE  -->
   <script src="assets\js\cookie.js"></script>
   <!--PAGE MAIN Js File-->
   <script src="assets\js\main.js"></script>
