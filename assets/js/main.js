@@ -3,6 +3,26 @@
  * 2023
 */
 
+//Click Portfolio items
+//init isotope
+$('.portfolio-items').isotope({
+    itemSelector: '.item',
+    layoutMode: 'fitRows'
+});
+//Click Isotope 
+$('.li_portfolio').click(function(){
+    $('.li_portfolio').removeClass("active");
+    $(this).addClass("active");
+    
+    //Capture a name if li<data-filter>
+    var selector = $(this).attr('data-filter');
+    $('.portfolio-items').isotope({
+        filter:selector
+    });
+    return false;
+});
+//END Click Portfolio items
+
 //INTERNAL LINKS
 $( ".btn-to-click" ).on( "click", function() {
     //action

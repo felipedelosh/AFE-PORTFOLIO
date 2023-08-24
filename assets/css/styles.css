@@ -771,10 +771,19 @@ My PortFolio
 /*
 Menu inline
 */
+
+/*
+Check Btn Show Hide
+*/
+
+/*
+END btn Show and hide
+*/
+
 .portfolio-menu{
   text-align: center;
 }
-.portfolio-menu ul li{
+.li_portfolio{
   list-style: none; /*Not Points in ul*/
   display: inline-block; /*ALl li inline*/
   margin: 20px 0px; /*Separares UL*/
@@ -793,7 +802,6 @@ Menu inline
 /*
 END inline
 */
-
 .portfolio-items{
   width: 100%;
 }
@@ -803,6 +811,61 @@ END inline
   padding-right: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+/*------ Settings EYE ------*/
+.container_eye {
+  --color: #a5a5b0;
+  --size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--size);
+  user-select: none;
+  fill: var(--color);
+}
+
+.container_eye .eye {
+  position: absolute;
+  animation: keyframes-fill .5s;
+}
+
+.container_eye .eye-slash {
+  position: absolute;
+  animation: keyframes-fill .5s;
+  display: none;
+}
+
+/* ------ On check event ------ */
+.container_eye input:checked ~ .eye {
+  display: none;
+}
+
+.container_eye input:checked ~ .eye-slash {
+  display: block;
+}
+
+/* ------ Hide the default checkbox ------ */
+.container_eye input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* ------ Animation ------ */
+@keyframes keyframes-fill {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
 }
 /*!
 END My Portfolio
