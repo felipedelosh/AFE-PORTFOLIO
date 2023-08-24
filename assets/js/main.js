@@ -294,6 +294,11 @@ function _responsiveConfigMobileH(){
     $('.my_services_col').css("margin-top", "2%");
     $('.my_services_col').css("margin-bottom", "2%");
     //Services
+    //PORTFOLIO
+    $('.item').removeClass("col-4");
+    $('.item').removeClass("col-6");
+    $('.item').addClass("col-12");
+    //PORTFOLIO
     //Contact me
     $('.contact_me_row').removeClass("row");
     $('.send_me_email_container').removeClass("col");
@@ -367,6 +372,11 @@ function _responsiveConfigTablet(){
     $('.my_services_col').css("margin-top", "2%");
     $('.my_services_col').css("margin-bottom", "2%");
     //Services
+    //PORTFOLIO
+    $('.item').removeClass("col-12");
+    $('.item').removeClass("col-4");
+    $('.item').addClass("col-6");
+    //PORTFOLIO
     //Contact me
     $('.contact_me_one_touch_social_icons').css("display", "block");
     $('.send_me_email_container').removeClass("col-12");
@@ -435,6 +445,11 @@ function _responsiveConfigDesktop(){
     $('.my_services_col').css("margin-top", "none");
     $('.my_services_col').css("margin-bottom", "2%");
     //Services
+    //PORTFOLIO
+    $('.item').removeClass("col-12");
+    $('.item').removeClass("col-6");
+    $('.item').addClass("col-4");
+    //PORTFOLIO
     //Contact me
     $('.contact_me_one_touch_social_icons').css("display", "block");
     $('.send_me_email_container').removeClass("col-12");

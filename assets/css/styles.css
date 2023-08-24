@@ -763,6 +763,8 @@ My PortFolio
 */
 .my_portfolio{
   width: 80%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin: 10px auto;
 }
 
