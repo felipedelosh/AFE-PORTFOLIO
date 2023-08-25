@@ -867,6 +867,48 @@ END inline
     transform: scale(1.2);
   }
 }
+
+/* -- BTN GITHUB PORTFOLIO --*/
+.button_github_code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.button_github_code .text {
+  color: white;
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.button_github_code svg path {
+  transition: 400ms;
+}
+
+.button_github_code:hover {
+  background-color: transparent;
+}
+
+.button_github_code:hover .text {
+  color: #181717;
+}
+
+.button_github_code:hover svg path {
+  fill: #181717;
+}
+
 /*!
 END My Portfolio
 */

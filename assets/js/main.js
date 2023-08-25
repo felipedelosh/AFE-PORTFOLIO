@@ -74,6 +74,25 @@ $( ".link-go-rebold" ).on( "click", function() {
     openNewTab("https://letsrebold.com/es/");
 });
 
+$( ".btn-go-github-laurens-project" ).on( "click", function() {
+    openNewTab("https://github.com/felipedelosh/laurensmusic");
+});
+
+$( ".btn-go-github-portfolio-project" ).on( "click", function() {
+    openNewTab("https://github.com/felipedelosh/AFE-PORTFOLIO");
+});
+
+$( ".btn-go-github-api-project" ).on( "click", function() {
+    openNewTab("https://github.com/felipedelosh/PruebaTecnicaSIER");
+});
+
+$( ".btn-go-github-fakerdata-project" ).on( "click", function() {
+    openNewTab("https://github.com/felipedelosh/DataOfRandomPersons");
+});
+
+$( ".btn-go-github-excelsql-project" ).on( "click", function() {
+    openNewTab("https://github.com/felipedelosh/ExcelToSQL");
+});
 
 /**
  * hover
@@ -595,7 +614,6 @@ function sendEmail(){
     alert("The 1st email system it's in develop.\nSend Email to 2nd protocol.");
     openNewTab("mailto:doctorfhernandez@hotmail.com?subject="+subject+"&body="+textEmail);
 }
-
 
 
 _responsiveRefresh();
