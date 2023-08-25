@@ -9,25 +9,26 @@ https://felipedelosh.github.io/AFE-PORTFOLIO/
 <br><br>
 This is my personal CV
 
-## :hammer:Funcionalidades del proyecto
+## :hammer:Functions
 
-- `Function 1`: Presentation about me to the www<br>
+- `Function 1`: Presentation about me to the World Wide Web<br>
 
 
 ## :play_or_pause_button:How to execute a project
 
 Double click in index.html file or enter https://felipedelosh.github.io/AFE-PORTFOLIO/
 
-## :hammer_and_wrench:Tecnologías.
+## :hammer_and_wrench:Tech
 
 - HTML
 - CSS
 - JavaScript
 - Jquery
+- Isotope
 - Boostrap
 - ChatGPT
 
-## :warning:Advertencia
+## :warning:Warning
 
 - It´s only fot free GITHUB storage not hav backend tecnologies.
 
