@@ -2,7 +2,6 @@
  * FelipedelosH
  * 2023
 */
-
 //Click Portfolio items
 //init isotope
 $('.portfolio-items').isotope({
@@ -32,10 +31,6 @@ $( "#eyeClose" ).on( "click", function() {
 
 
 //INTERNAL LINKS
-$( ".btn-to-click" ).on( "click", function() {
-    //action
-});
-
 $( ".btn_downloadCV" ).on( "click", function() {
     openLocalTab("DOWNLOAD/cv.pdf");
 });
@@ -521,7 +516,7 @@ function _showPortFolioItems(){
 
 
 /**
- * When the page is open new close all projects
+ * When the page is open close all projects_portfolio
  * same if reload
  */
 function _closeEYE(){
