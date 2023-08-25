@@ -877,6 +877,50 @@ END My Portfolio
 
 
 /*!
+BLOG
+*/
+.blog{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.card_blog{
+  border: 1px solid #777;
+  border-radius: 2px;
+}
+
+.title_card_blog, .text_autor_card_blog{
+  padding-top: 2%;
+  margin-left: 2%;
+}
+
+.autor_card_blog{
+  margin-left: 2%;
+}
+
+.link_card_blog_read_more{
+  margin-left: 2%;
+  text-decoration: none;
+  color: #f85c70;
+}
+
+.link_card_blog_read_more:hover{
+  color: red;
+}
+
+/*!
+END Blog
+*/
+/*!
+=======================================================================
+*/
+
+
+
+
+
+
+/*!
 Contact me
 */
 .contact_me{
