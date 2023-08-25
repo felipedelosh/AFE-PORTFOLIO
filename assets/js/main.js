@@ -257,6 +257,12 @@ function _responsiveConfigMobileDefaultH(){
     $('.item').removeClass("col-6");
     $('.item').addClass("col-12");
     //PORTFOLIO
+    //BLOG
+    $('.card_blog_container_img').removeClass("col-4");
+    $('.card_blog_container_text').removeClass("col-8");
+    $('.card_blog_container_img').addClass("col-12");
+    $('.card_blog_container_text').addClass("col-12");
+    //BLOG
     //Contact me
     $('.contact_me_row').removeClass("row");
     $('.send_me_email_container').removeClass("col");
@@ -329,6 +335,12 @@ function _responsiveConfigMobileH(){
     $('.item').removeClass("col-6");
     $('.item').addClass("col-12");
     //PORTFOLIO
+    //BLOG
+    $('.card_blog_container_img').removeClass("col-4");
+    $('.card_blog_container_text').removeClass("col-8");
+    $('.card_blog_container_img').addClass("col-12");
+    $('.card_blog_container_text').addClass("col-12");
+    //BLOG
     //Contact me
     $('.contact_me_row').removeClass("row");
     $('.send_me_email_container').removeClass("col");
@@ -407,6 +419,12 @@ function _responsiveConfigTablet(){
     $('.item').removeClass("col-4");
     $('.item').addClass("col-6");
     //PORTFOLIO
+    //BLOG
+    $('.card_blog_container_img').removeClass("col-4");
+    $('.card_blog_container_text').removeClass("col-8");
+    $('.card_blog_container_img').addClass("col-12");
+    $('.card_blog_container_text').addClass("col-12");
+    //BLOG
     //Contact me
     $('.contact_me_one_touch_social_icons').css("display", "block");
     $('.send_me_email_container').removeClass("col-12");
@@ -480,6 +498,12 @@ function _responsiveConfigDesktop(){
     $('.item').removeClass("col-6");
     $('.item').addClass("col-4");
     //PORTFOLIO
+    //BLOG
+    $('.card_blog_container_img').removeClass("col-12");
+    $('.card_blog_container_text').removeClass("col-12");
+    $('.card_blog_container_img').addClass("col-4");
+    $('.card_blog_container_text').addClass("col-8");
+    //BLOG
     //Contact me
     $('.contact_me_one_touch_social_icons').css("display", "block");
     $('.send_me_email_container').removeClass("col-12");
