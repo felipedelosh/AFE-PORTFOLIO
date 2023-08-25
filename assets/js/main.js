@@ -557,12 +557,33 @@ function _closeEYE(){
     }
 }
 
+/**
+ * Reminds when the user enter a name in email from contact
+ * @param {*} username 
+ */
+function _saveUserInCookie(username){
+    localStorage.setItem('username', username);
+}
 
 /**
- * 
+ * Enter a text and validates if not empty
+ * @param {*} txt 
+ */
+function _valitatesString(txt){
+    return txt.trim().length > 0;
+}
+
+
+/**
+ * Send EMAIL
 */
 function sendEmail(){
     var username = $('#usr_name_contact_me').val();
+    if (_valitatesString(username)){
+        _saveUserInCookie(username)
+    }else{
+        //
+    }
     $('#usr_name_contact_me').val("");
     var useremail = $('#usr_email_contact_me').val();
     $('#usr_email_contact_me').val("");
@@ -570,10 +591,12 @@ function sendEmail(){
     $('#usr_text_contact_me').val("");
 
     var subject = "Job Inquiry - FelipedelosH";
-    var textEmail = "Dear Felipe Hernández,\n I'm: " + useremail + "\nI read you portfolio:\n\n" + usersms;
+    var textEmail = "Dear Felipe Hernández,\n I'm: " + username + "\nI read you portfolio:\n\n" + usersms + "\n\n" + "My Contact Email:\n" + useremail;
     alert("The 1st email system it's in develop.\nSend Email to 2nd protocol.");
     openNewTab("mailto:doctorfhernandez@hotmail.com?subject="+subject+"&body="+textEmail);
 }
+
+
 
 _responsiveRefresh();
 _closeEYE();
