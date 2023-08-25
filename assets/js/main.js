@@ -27,7 +27,9 @@ $( "#eyeClose" ).on( "click", function() {
     hideOrShowPortFolioItems();
 });
 //END Click Portfolio items
-
+$( ".contanct_me_send_email" ).on( "click", function() {
+    sendEmail();
+});
 
 
 //INTERNAL LINKS
@@ -543,8 +545,9 @@ function _showPortFolioItems(){
 
 /**
  * When the page is open close all projects_portfolio
+ * (The first time it´s so much information to page)
  * same if reload
- */
+*/
 function _closeEYE(){
     if($('#show_hide_portfolio-items').is(':checked')){
         _hidePortFolioItems();
@@ -555,6 +558,22 @@ function _closeEYE(){
 }
 
 
+/**
+ * 
+*/
+function sendEmail(){
+    var username = $('#usr_name_contact_me').val();
+    $('#usr_name_contact_me').val("");
+    var useremail = $('#usr_email_contact_me').val();
+    $('#usr_email_contact_me').val("");
+    var usersms = $('#usr_text_contact_me').val();
+    $('#usr_text_contact_me').val("");
+
+    var subject = "Job Inquiry - FelipedelosH";
+    var textEmail = "Dear Felipe Hernández,\n I'm: " + useremail + "\nI read you portfolio and i wanna say you:\n" + usersms;
+    alert("The 1st email system it's in develop.\nSend Email to 2nd protocol.");
+    openNewTab("mailto:doctorfhernandez@hotmail.com?subject="+subject+"&body="+textEmail);
+}
 
 _responsiveRefresh();
 _closeEYE();
