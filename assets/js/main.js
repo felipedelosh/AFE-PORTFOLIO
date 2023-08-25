@@ -148,8 +148,10 @@ function _hideShowAvatarPicController(){
     let _imgPos = $('.navbar_menu').offset().top;
     if(_imgPos<=$(window).scrollTop()){
         $('.img_avatar').css("display", "none");
+        $('.text_back_img_avatar').css("display", "block");
     }else{
         $('.img_avatar').css("display", "block");
+        $('.text_back_img_avatar').css("display", "none");
     }
 }
 
