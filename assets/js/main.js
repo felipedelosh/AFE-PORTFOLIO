@@ -32,10 +32,10 @@ $( ".contanct_me_send_email" ).on( "click", function() {
 });
 //Change language of page
 $(".switch-left").on("click", function() {
-    _setLanguagePage();
+    _swicthLanguagePage();
 });
 $(".switch-right").on("click", function() {
-    _setLanguagePage();
+    _swicthLanguagePage();
 });
 
 
@@ -642,30 +642,24 @@ function sendEmail(){
 /**
  * Enter a string to change a page
 */
-function _setLanguagePage(){
-    if(localStorage.getItem('language') === null){
-        localStorage.setItem('language', 'en');
-        if(!$("#chk_sw_lang").prop("checked")){
-            $(".switch-left").click();
-        }
-        $('.text_eng').css("display", "block");
-        $('.text_esp').css("display", "block");
+function _swicthLanguagePage(){
+    if((localStorage.getItem('language') === null) || (localStorage.getItem('language') === 'en')){
+        localStorage.setItem('language', 'es');
     }else{
-        if(localStorage.getItem('language') === "en"){
-            localStorage.setItem('language', 'es'); //Select a next sw lang if press put in es
-            if(!$("#chk_sw_lang").prop("checked")){
-                $(".switch-left").click();
-            }
-            $('.text_eng').css("display", "block");
-            $('.text_esp').css("display", "none");
-        }else{
-            localStorage.setItem('language', 'en');
-            if($("#chk_sw_lang").prop("checked")){
-                $(".switch-left").click();
-            }
-            $('.text_eng').css("display", "none");
-            $('.text_esp').css("display", "block");
-        }
+        localStorage.setItem('language', 'en');
+    }
+    _setLanguagePage();
+}
+
+function _setLanguagePage(){
+    if((localStorage.getItem('language') === null) || (localStorage.getItem('language') === 'en')){
+        $('.text_eng').css("display", "block");
+        $('.text_esp').css("display", "none");
+        localStorage.setItem('language', 'en');
+    }else{
+        $('.text_eng').css("display", "none");
+        $('.text_esp').css("display", "block");
+        localStorage.setItem('language', 'es');
     }
 }
 
