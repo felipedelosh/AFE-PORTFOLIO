@@ -30,6 +30,15 @@ $( "#eyeClose" ).on( "click", function() {
 $( ".contanct_me_send_email" ).on( "click", function() {
     sendEmail();
 });
+//Change language of page
+$(".switch-left").on("click", function() {
+    _setLanguagePage();
+});
+$(".switch-right").on("click", function() {
+    _setLanguagePage();
+});
+
+
 
 
 //INTERNAL LINKS
@@ -158,6 +167,8 @@ function openHTML(url){
 
 $(window).scroll(function(){
     _hideShowAvatarPicController();
+    _hideShowBtnLanguageController();
+
 });
 
 $(window).resize(function(){
@@ -169,14 +180,25 @@ function _hideShowAvatarPicController(){
     let _imgPos = $('.navbar_menu').offset().top;
     if(_imgPos<=$(window).scrollTop()){
         $('.img_avatar').css("display", "none");
-        $('.btn-bottom-floating').css("display", "block");
         $('.text_back_img_avatar').css("display", "block");
     }else{
         $('.img_avatar').css("display", "block");
-        $('.btn-bottom-floating').css("display", "none");
         $('.text_back_img_avatar').css("display", "none");
     }
 }
+
+function _hideShowBtnLanguageController(){
+    let _h = $(window).scrollTop();
+    let _y0 = $('.navbar_menu').offset().top;
+    
+    if (_y0 <= _h){
+        $('.btn-bottom-floating').css("display", "block");
+    }else{
+        $('.btn-bottom-floating').css("display", "none");
+    }
+
+}
+
 
 function _responsiveRefresh(){
     var _w = $(window).width();
@@ -617,6 +639,38 @@ function sendEmail(){
     openNewTab("mailto:doctorfhernandez@hotmail.com?subject="+subject+"&body="+textEmail);
 }
 
+/**
+ * Enter a string to change a page
+*/
+function _setLanguagePage(){
+    if(localStorage.getItem('language') === null){
+        localStorage.setItem('language', 'en');
+        if(!$("#chk_sw_lang").prop("checked")){
+            $(".switch-left").click();
+        }
+        $('.text_eng').css("display", "block");
+        $('.text_esp').css("display", "block");
+    }else{
+        if(localStorage.getItem('language') === "en"){
+            localStorage.setItem('language', 'es'); //Select a next sw lang if press put in es
+            if(!$("#chk_sw_lang").prop("checked")){
+                $(".switch-left").click();
+            }
+            $('.text_eng').css("display", "block");
+            $('.text_esp').css("display", "none");
+        }else{
+            localStorage.setItem('language', 'en');
+            if($("#chk_sw_lang").prop("checked")){
+                $(".switch-left").click();
+            }
+            $('.text_eng').css("display", "none");
+            $('.text_esp').css("display", "block");
+        }
+    }
+}
 
+
+_setLanguagePage();
 _responsiveRefresh();
+_hideShowBtnLanguageController();
 _closeEYE();
