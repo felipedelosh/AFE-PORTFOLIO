@@ -579,9 +579,11 @@ function hideOrShowPortFolioItems(){
 }
 function _hidePortFolioItems(){
     $('.portfolio-items').css("display", "none");
+    $('.container_text_to_blink').css("display", "block");
 }
 function _showPortFolioItems(){
     $('.portfolio-items').css("display", "block");
+    $('.container_text_to_blink').css("display", "none");
     $('.li_portfolio_show_all').click();
 }
 
@@ -663,8 +665,12 @@ function _setLanguagePage(){
     }
 }
 
+function _goToTop(){
+    $("html, body").animate({ scrollTop: 0 }, 1);
+}
 
 _setLanguagePage();
 _responsiveRefresh();
 _hideShowBtnLanguageController();
 _closeEYE();
+_goToTop();
