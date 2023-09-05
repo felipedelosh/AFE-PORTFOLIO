@@ -87,6 +87,10 @@ $( ".btn-go-github-laurens-project" ).on( "click", function() {
     openNewTab("https://github.com/felipedelosh/laurensmusic");
 });
 
+$( ".btn-go-github-cdaanserma-project" ).on( "click", function() {
+    openNewTab("https://github.com/felipedelosh/CDA-ANSERMA");
+});
+
 $( ".btn-go-github-portfolio-project" ).on( "click", function() {
     openNewTab("https://github.com/felipedelosh/AFE-PORTFOLIO");
 });
