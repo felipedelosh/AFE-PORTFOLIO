@@ -40,7 +40,6 @@ $(".switch-right").on("click", function() {
 
 
 
-
 //INTERNAL LINKS
 $( ".btn_downloadCV" ).on( "click", function() {
     openLocalTab("DOWNLOAD/cv.pdf");
