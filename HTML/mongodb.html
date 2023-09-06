@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>mongodb</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="FelipedelosH" />
+  <!-- Incluir Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Incluir Bootstrap JS y dependencias de Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+</style>
+<body>
+  <div class="container-fluid">
+    <p class="h1">MongoDB</p>
+    <hr>
+    <p class="h5">Es una base de datos que no es SQL "solo guarda Json"</p>
+    <p class="h5">Se ejecuta desde 2 terminales 1 mongod que es el servicio y mongo que es el conector</p>
+    <p class="h5">Esto ejecuta Js por debajo.</p>
+    <p class="h4">MongoDB = Humongous=>"Gigante"</p>
+    <p class="h4">Hay que descargarlo:  <a href="https://www.mongodb.com">DESCARGAR</a></p>
+    <p class="h7">Agregarlo al PATH</p>
+    <p class="h7">tenemos que ir al C: y crear la carpeta: "data" y adentro de data crear la carpeta "db"</p>
+    <br><br>
+    <hr>
+    <p class="h2">Los datos se guardan así:</p>
+    <p class="h8">Las bases de datos contienen diccionarios y los diccionarios contienen json</p>
+    <br>
+    <p class="h3">Nombre de la base datos</p>
+    <p class="h6">Para crear una base de datos: use [nameDB]</p>
+    <p class="h8">Nota: aca se crea db en automatico.</p>
+    <p class="h3">Nombre de los diccionarios</p>
+    <p class="h6">Mandarle el Json: db.[nombreDic].insert({"name":"loQueSeaMierda"})</p>
+    <p class="h8">Nota: aca se crea diccionario en automatico.</p>
+    <p class="h6">db.createCollection("nombreDic")</p>
+    <p class="h3">Elementos del Diccionario</p>
+    <p class="h8">Pues lo acabamos de ver arriba [dic].insert.({"XYZ":"LoQueSeaMierda"})</p>
+    <br><br>
+    <hr>
+    <br>
+    <p class="h2">CMD</p>
+    <br>
+    <p class="h4">Saber si mongo está intalado:</p>
+    <p class="h7">mongod --version</p>
+    <br>
+    <p class="h4">Iniciar mongodb:</p>
+    <p class="h7">mongod</p>
+    <br>
+    <p class="h4">Conectarse a mongo:</p>
+    <p class="h7">mongo</p>
+    <p class="h8">Nota: usted tiene que abrir 2 terminales 1 para mongod y la otra para el mongo</p>
+    <br>
+    <p class="h4">Saber en que base de datos estoy</p>
+    <p class="h7">db</p>
+    <br>
+    <p class="h4">Listar todas las bases de datos</p>
+    <p class="h7">show dbs</p>
+    <br>
+    <p class="h4">Ejecutar consulta de prueba:</p>
+    <p class="h8">En la terminal mongo escribir 2+2 y esperar el resultado al presionar enter</p>
+    <p class="h7">2+2</p>
+    <br>
+    <br>
+    <p class="h4">Ayuda</p>
+    <p class="h7">[comando].help()</p>
+    <p class="h8">ejemplo: db.help()</p>
+    <br>
+    <p class="h4">Crear Base datos</p>
+    <p class="h7">use nombreNuevaBaseDeDatos</p>
+    <p class="h8">Hasta que no almacene algo no se va hacer commit</p>
+    <pre>
+      eliminar base datos: pararse en la base de datos que se desea eliminar y luego: db.dropDatabase()
+    </pre>
+    <br>
+    <p class="h4">Crear Collection</p>
+    <p class="h7">db.createCollection("nameOfCollection")</p>
+    <pre>
+      ver todas las collection: show collections
+      eliminar collection: db.nameOfCollection.drop()
+    </pre>
+    <br>
+    <p class="h4">Guardar Json</p>
+    <p class="h7">db.[nameOfCollection].insert(Json)</p>
+    <pre>
+      Consultar todos json: db.[nameOfCollection].find()
+      Consultar todos json y ver humanamente: db.[nameOfCollection].find().pretty()
+    </pre>
+    <br>
+    <p class="h4">Buscar Json</p>
+    <p class="h6">db.[nameOfCollection].find({json para buscar})</p>
+    <pre>
+      Inserte estos registros:
+
+      db.user.insert({"name":"loco", "pass": 123})
+      db.user.insert({"name":"otro", "pass": 123})
+      db.user.insert({"name":"ese", "pass": 123})
+      db.user.insert({"name":"ella", "pass": "kmzwa8awaa"}) 
+      
+      Buscar al loco: db.user.find({"name":"loco"})
+      Buscar todos las contraseñas 123: db.user.find({"pass":123})
+      limitar busqueda: db.user.find({"pass":123}).limit(2)
+
+      # Para busquedas más especifias buscar por programació<nav></nav>
+      # Todos los usuarios que terminan en o: 
+      db.user.find().forEach( function(i) { if(i.name.slice(-1) === "o"){ print(i.name) } } );
+    </pre>
+    <br>
+    <p class="h4">Actualizar Json</p>
+    <p class="h6">Hay un metodo de buscar y reemplzar: db.[nameOfCollection].update({find}, {$set: {replace}})</p>
+    <pre>
+      Inserte estos registros:
+
+      db.user.insert({"name":"loco", "pass": 123})
+      db.user.insert({"name":"otro", "pass": 123})
+      db.user.insert({"name":"ese", "pass": 123})
+      db.user.insert({"name":"ella", "pass": "kmzwa8awaa"}) 
+
+      # Reemplazar todas las contraseñas 123
+      db.user.update({"pass":123}, {$set: {"pass": 777}})
+    </pre>
+    <br>
+    <p class="h4">Crear si no exite</p>
+    <p class="h6">db.[nameOfCollection].update({!find}, {datos}. {upsert: true})</p>
+    <pre>
+      intentar:
+      db.user.update({"name":"no existe"}, {"option": "data"}, {upsert: true})
+    </pre>
+    <br>
+    <p class="h4">Salir</p>
+    <p class="h7">exit</p>
+    <hr>
+    <p class="h3">variables:</p>
+    <pre>
+      Para declarar una variables solo basta con asignar ejemplo:
+      x = 100
+      
+      Luego podemos ejecutar operaciones: x*4 o x/10 o x+1...
+    </pre>
+    <p class="h3">Codificar</p>
+    <pre>
+      Aquí todo se hace con JavaScript por debajo.
+
+      Puedo importar math y hacer Seno:
+
+      Math.sin(30)
+
+      Puedo trabajar con fechas
+
+      new Date()
+
+      Puedo crear funciones:
+
+      function factorial(n){if(n<=1){return 1;} return n * factorial(n-1);}
+      * presiono enter y luego llamo a la función.
+
+    </pre>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
