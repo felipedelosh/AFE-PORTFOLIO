@@ -33,9 +33,29 @@
     <br>
     <p class="h4">4 -> Comentar solo lo necesario</p>
     <p class="h6">Se supone que el codigo se autodocumenta. los comentarios solo deben ser de advertencia o aclaratorios.</p>
+    <p class="h6">En ves de escribir un comentario es mejor que el codigo explique lo que hace.</p>
+    <p class="h6">NOTA: Si el codigo cambia el comentario queda obsoleto y por tanto miente.</p>
     <br>
     <p class="h4">5 -> Dejar el codigo más limpio de lo que estaba</p>
     <p class="h6">Si vas a tocar un pedacito de un codigo hay que mejorar su código a su alrededor.</p>
+    <br>
+    <p class="h4">6 -> Escribe Try/Cacth/Finally</p>
+    <p class="h6">En caso de error hay que dejar el programa preparado para que continue.</p>
+    <br>
+    <p class="h4">7 -> No devuelvas null</p>
+    <p class="h6">Muchos lenguajes no gestionan NULL entonces es muy peligroso.</p>
+    <br>
+    <p class="h4">8 -> Orden de declaración de variables</p>
+    <p class="h6">Primero: Constantes Publicas.</p>
+    <p class="h6">Segundo: Constantes Privadas.</p>
+    <p class="h6">Tercero: variables Publicas.</p>
+    <p class="h6">Cuarto: variables Privadas.</p>
+    <p class="h6">Quinto: Funciones Publicas.</p>
+    <p class="h6">Sexto: Funciones Privadas.</p>
+    <br>
+    <p class="h4">9 -> Utilizar copias de objetos para trabajar concurrencia</p>
+    <p class="h6">Los objetos deben ser inmutables, por ello se necesita crear copias de cada objeto.</p>
+    <p class="h7">... Mucha parte del Clean Code está enfocado al Testing.</p>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
