@@ -646,6 +646,18 @@ END Download CV from About
 }
 
 
+.container_ico_skill{
+ display: flex;
+ align-items: center;
+ justify-content: end;
+}
+
+.container_text_skill{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
 
 /*!
 END About
