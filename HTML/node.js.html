@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>NodeJS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="FelipedelosH" />
+  <!-- Incluir Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Incluir Bootstrap JS y dependencias de Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+</style>
+<body>
+  <div class="container-fluid">
+    <p class="h1">NodeJs</p>
+    <hr>
+    <p class="h5">Convierte codigo JavaScript a Backend/Desktop <a href="https://nodejs.org/es">DESCARGAR</a></p>
+    <p class="h5">Se crean archivos.js y se ejecutan como si fueran un programa.</p>
+    <p class="h5">Se creo para tener miles de concurrencias.</p>
+    <br>
+    <hr>
+    <p class="h1">Hola mundo</p>
+    <p class="h5">Crea un archivo.js con el siguiente codigo:</p>
+    <pre>
+      console.log("hola mundo");
+    </pre>
+    <p class="h6">Ejecutalo desde el terminal con el siguiente comando:</p>
+    <p class="h7">node archivo.js</p>
+    <br>
+    <hr>
+    <p class="h1">Arquitectura de la solución</p>
+    <p class="h5">Los programas se crean en modulos:</p>
+    <pre>
+        //Crear calculadora
+        modulo matematica: math.js 
+        modulo main: index.js 
+        ----------------------------------------
+
+        //Matematica:
+        function add(x1, x2){
+          return x1 + x2;
+        }
+        
+        function substract(x1, x2){
+          return x1 - x2;
+        }
+        
+        function divide(x1, x2){
+          if (x2 === 0){
+            return "infinity";
+          }
+          return x1 / x2;
+        }
+        
+        function multiply(x1, x2){
+          return x1 * x2;
+        }
+        
+        exports.add = add;
+        exports.substract = substract;
+        exports.divide = divide;
+        exports.multiply = multiply;
+
+        ----------------------------------------
+        //main
+        const math = require('./math.js');
+
+        console.log(math.add(2,2));
+    </pre>
+    <hr>
+    <p class="h1">Modulos</p>
+    <p class="h3">Ver la documentación: <a href="https://nodejs.org/api/">DOCs</a> </p>
+    <p class="h4">Sistema operativo</p>
+    <pre>
+      const os = require('os');
+      console.log(os.homedir());
+    </pre>
+    <p class="h4">Crear archivo Plano</p>
+    <pre>
+      const files = require('fs');
+
+      files.writeFile('./texto.txt', 'El Texto Adentro', function(err){
+        if(err){
+        console.log(err);
+        }
+        console.log("create");
+      });
+    </pre>   
+    <br>
+    <p class="h1">Crear Servidor</p>
+    <pre>
+      const http = require('http');
+
+      http.createServer(function (req, res){
+        res.writeHead(200, { 'Content-type' : 'text/html' });
+        res.write('&lt;h1&gt;Hello From Node Server&lt;/h1&gt;');
+        res.end();
+      }).listen(3000);
+      //Go to dir http://localhost:3000/
+      //Nota: el codigo no es hot reload
+    </pre> 
+    <p class="h5">...</p>
+    <br>
+    <p class="h4"></p>
+    <br>
+    <hr>
+    <p class="h3">CMD</p>
+    <br>
+    <p class="h4">Ver la versión instalada</p>
+    <p class="h7">node --version</p>
+    <br>
+    <p class="h4">Instalar libreria</p>
+    <p class="h7">npm install NombreLibreria</p>
+    <p class="h7">Ahora en el codigo: const x = require('NombreLibreria');</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
