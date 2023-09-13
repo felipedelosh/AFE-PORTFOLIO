@@ -706,12 +706,14 @@ function _changeVisualMode(){
 function activeMatrixSkin(){
     $('body').css("background-color", "black");
     $(".navbar_menu").css("background-color", "black");
+    $(".card_visible").css("background-color", "black");
+    $(".li_visible").css("background-color", "black");
     $(".text_eng").css("color", "green");
     $(".text_esp").css("color", "green");
     $(".text_visible").css("color", "green");
     $(".text_description_afe_02").css("color", "green");
     $(".about_skill_ico").css("color", "green");
-    
+    $(".ico-social-link").css("color", "green");
 }
 
 function _goToTop(){
