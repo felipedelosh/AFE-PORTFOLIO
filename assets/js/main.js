@@ -38,6 +38,28 @@ $(".switch-right").on("click", function() {
     _swicthLanguagePage();
 });
 
+//Keyboard
+$(document).ready(function(){
+	$("body").keydown(function(event){
+        let key = String.fromCharCode(event.which)
+        if(localStorage.getItem("keyboard-history") === null){
+            localStorage.setItem('keyboard-history', key);
+        }else{
+            localStorage.setItem('keyboard-history', localStorage.getItem("keyboard-history")+key);
+            _changeVisualMode(); //password
+
+            //Controller len of text
+            if(localStorage.getItem("keyboard-history").length >= 500){
+                localStorage.setItem('keyboard-history', '');
+            }
+        
+        
+        }
+
+        
+	}); 
+});
+
 
 
 //INTERNAL LINKS
@@ -666,6 +688,30 @@ function _setLanguagePage(){
         $('.text_esp').css("display", "block");
         localStorage.setItem('language', 'es');
     }
+}
+
+function _changeVisualMode(){
+    if(localStorage.getItem("keyboard-history") !== null){
+        //Code of matrix
+        if(localStorage.getItem("keyboard-history").includes("MATRIX")){
+            activeMatrixSkin();
+    
+            //Destoy secret
+            localStorage.setItem("keyboard-history", '');
+        }
+
+    }
+}
+
+function activeMatrixSkin(){
+    $('body').css("background-color", "black");
+    $(".navbar_menu").css("background-color", "black");
+    $(".text_eng").css("color", "green");
+    $(".text_esp").css("color", "green");
+    $(".text_visible").css("color", "green");
+    $(".text_description_afe_02").css("color", "green");
+    $(".about_skill_ico").css("color", "green");
+    
 }
 
 function _goToTop(){
