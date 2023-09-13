@@ -49,6 +49,23 @@ Header
 }
 
 
+/*
+MATRIX
+*/
+.canvas_matrix_watterfall{
+  display: none;
+}
+
+canvas {
+  width: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+} 
+/*
+END MATRIX
+*/
+
 /*!
 DOWNLOAD CV IN SPACE
 */
