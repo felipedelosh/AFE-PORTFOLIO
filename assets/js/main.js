@@ -714,6 +714,8 @@ function activeMatrixSkin(){
     $(".text_description_afe_02").css("color", "green");
     $(".about_skill_ico").css("color", "green");
     $(".ico-social-link").css("color", "green");
+    $(".ico_kpi_personal").css("color", "green");
+    $(".ico_my_services").css("color", "green");
 }
 
 function _goToTop(){
