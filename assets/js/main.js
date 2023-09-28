@@ -135,36 +135,54 @@ $( ".nav_link_go_home" ).hover(function() {
     $('.nav_link_go_home').css("color", "#f85c70");
 }).mouseleave(function() {  
     $('.nav_link_go_home').css("color", "black");
+    if(localStorage.getItem("display-mode") !== null){
+        $('.nav_link_go_home').css("color", "green");
+    }
 });
 
 $( ".nav_link_go_about" ).hover(function() {
     $('.nav_link_go_about').css("color", "#f85c70");
 }).mouseleave(function() {  
     $('.nav_link_go_about').css("color", "black");
+    if(localStorage.getItem("display-mode") !== null){
+        $('.nav_link_go_about').css("color", "green");
+    }
 });
 
 $( ".nav_link_go_resume" ).hover(function() {
     $('.nav_link_go_resume').css("color", "#f85c70");
 }).mouseleave(function() {  
     $('.nav_link_go_resume').css("color", "black");
+    if(localStorage.getItem("display-mode") !== null){
+        $('.nav_link_go_resume').css("color", "green");
+    }
 });
 
 $( ".nav_link_go_portfolio" ).hover(function() {
     $('.nav_link_go_portfolio').css("color", "#f85c70");
 }).mouseleave(function() {  
     $('.nav_link_go_portfolio').css("color", "black");
+    if(localStorage.getItem("display-mode") !== null){
+        $('.nav_link_go_portfolio').css("color", "green");
+    }
 });
 
 $( ".nav_link_go_blog" ).hover(function() {
     $('.nav_link_go_blog').css("color", "#f85c70");
 }).mouseleave(function() {  
     $('.nav_link_go_blog').css("color", "black");
+    if(localStorage.getItem("display-mode") !== null){
+        $('.nav_link_go_blog').css("color", "green");
+    }
 });
 
 $( ".nav_link_go_contact" ).hover(function() {
     $('.nav_link_go_contact').css("color", "#f85c70");
 }).mouseleave(function() {  
     $('.nav_link_go_contact').css("color", "black");
+    if(localStorage.getItem("display-mode") !== null){
+        $('.nav_link_go_contact').css("color", "green");
+    }
 });
 
 
@@ -704,6 +722,9 @@ function _changeVisualMode(){
 }
 
 function activeMatrixSkin(){
+    if(localStorage.getItem("display-mode") === null){
+        localStorage.setItem('display-mode', 'matrix');
+    }
     $(".canvas_matrix_watterfall").css("display", "block");
     $('body').css("background-color", "black");
     $(".navbar_menu").css("background-color", "black");
