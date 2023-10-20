@@ -71,9 +71,9 @@ DOWNLOAD CV IN MATRIX
 */
 #btn_download_cv_matrix {
 --glow-color: rgb(0, 180, 0);
---glow-spread-color: rgba(191, 123, 255, 0.781);
---enhanced-glow-color: rgb(231, 206, 255);
---btn-color: rgb(100, 61, 136);
+--glow-spread-color: rgba(53, 171, 40, 0.781);
+--enhanced-glow-color: rgb(25, 72, 18);
+--btn-color: rgb(12, 34, 5);
 border: .25em solid var(--glow-color);
 padding: 1em 3em;
 color: var(--glow-color);
