@@ -728,6 +728,11 @@ function _setThemePage(){
 
 function _changeVisualMode(){
     if(localStorage.getItem("keyboard-history") !== null){
+        //Deafult mode
+        if(localStorage.getItem("keyboard-history").includes('')){
+            setDefaultSkin();
+        }
+
         //Code of matrix
         if(localStorage.getItem("keyboard-history").includes("MATRIX")){
             localStorage.setItem('display-mode', 'matrix');
@@ -736,8 +741,13 @@ function _changeVisualMode(){
             //Destroy secret
             localStorage.setItem("keyboard-history", '');
         }
-
+    }else{
+        setDefaultSkin();
     }
+}
+
+function setDefaultSkin(){
+    $(".btn_download_my_cv_from_about_matrix").css("display", "none");
 }
 
 function activeMatrixSkin(){
@@ -757,6 +767,8 @@ function activeMatrixSkin(){
     $(".ico-social-link").css("color", "green");
     $(".ico_kpi_personal").css("color", "green");
     $(".ico_my_services").css("color", "green");
+    $(".btn_download_my_cv_from_about").css("display", "none");
+    $(".btn_download_my_cv_from_about_matrix").css("display", "block");
 
     var canvas = document.getElementById( 'canvas' ),
 	ctx = canvas.getContext( '2d' ),
@@ -846,5 +858,6 @@ _setLanguagePage();
 _setThemePage();
 _responsiveRefresh();
 _hideShowBtnLanguageController();
+_changeVisualMode()
 _closeEYE();
 _goToTop();
