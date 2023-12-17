@@ -732,6 +732,19 @@ function _changeVisualMode(){
         if(localStorage.getItem("keyboard-history").includes('')){
             setDefaultSkin();
         }
+        //Code HTML
+        if(localStorage.getItem("keyboard-history").includes("HTML")){
+            openLocalTab("HTML/index.html");
+            //Destroy secret
+            localStorage.setItem("keyboard-history", '');
+        }
+
+        //See Projects details
+        if(localStorage.getItem("keyboard-history").includes("PROJECTS")){
+            openLocalTab("HTML/projects.html");
+            //Destroy secret
+            localStorage.setItem("keyboard-history", '');
+        }
 
         //Code of matrix
         if(localStorage.getItem("keyboard-history").includes("MATRIX")){
