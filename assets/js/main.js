@@ -64,11 +64,11 @@ $(document).ready(function(){
 
 //INTERNAL LINKS
 $( ".btn_downloadCV" ).on( "click", function() {
-    openLocalTab("DOWNLOAD/cv.pdf");
+    downloadCV();
 });
 
 $( ".btn_download_my_cv_from_about" ).on( "click", function() {
-    openLocalTab("DOWNLOAD/cv.pdf");
+    downloadCV();
 });
 
 //EXTERNAL LINKS
@@ -127,6 +127,20 @@ $( ".btn-go-github-fakerdata-project" ).on( "click", function() {
 $( ".btn-go-github-excelsql-project" ).on( "click", function() {
     openNewTab("https://github.com/felipedelosh/ExcelToSQL");
 });
+
+
+function downloadCV(){
+    //Download ENG  if not configure LANG
+    if(localStorage.getItem('language') === null){
+        openLocalTab("DOWNLOAD/CVENG.pdf");
+    }else{
+        if(localStorage.getItem('language') === 'en'){
+            openLocalTab("DOWNLOAD/CVENG.pdf");
+        }else{
+            openLocalTab("DOWNLOAD/CVESP.pdf");
+        }
+    }
+}
 
 /**
  * hover
