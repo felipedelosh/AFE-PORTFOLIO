@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>TITLE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="FelipedelosH" />
+  <!-- Incluir Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Incluir Bootstrap JS y dependencias de Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+</style>
+<body>
+  <div class="container-fluid">
+    <p class="h1">Numpy</p>
+    <p class="h6">Es una libreria de python para manipular arreglos, es la base de tensorflow.<br>Optimizar los arreglos para poder trabajar IA</p>
+    <br>
+    <p class="h4">Instalar: Python -m pip install numpy</p>
+    <p class="h4">Usar: import numpy as np</p>
+    <hr>
+    <p class="h5">Crear arreglos:</p>
+    <pre>
+      # Ejemplo:
+      _data = [31,28,29,19]
+
+      arr = np.array(_data)
+    </pre>
+    <hr>
+    <p class="h5">Ver la tamaño del arreglo (h, w):</p>
+    <pre>
+      _data2D = [[1,2],
+           [4,5],
+           [7,8]]
+
+      arr = np.array(_data2D)
+
+      print(arr.shape)
+    </pre>
+    <hr>
+    <p class="h5">Ver las dimenciones del arreglo:</p>
+    <pre>
+      _data2D = [[1,2],
+           [4,5],
+           [7,8]]
+
+      arr = np.array(_data2D)
+
+      print(arr.ndim)
+    </pre>
+    <hr>
+    <p class="h5">Ver el tipo de datos:</p>
+    <pre>
+      _data2D = [[1,2],
+           [4,5],
+           [7,8]]
+
+      arr = np.array(_data2D)
+
+      print(arr.dtype)
+    </pre>
+    <hr>
+    <p class="h5">Guardar en formato:</p>
+    <pre>
+      #Ejemplo: guardar en formato entero de 64 bits
+      arr = np.array(_data2D, dtype=np.int64)
+    </pre>
+    <hr>
+    <p class="h5">Crear vector:</p>
+    <pre>
+      #Crear vector del 0 hasta el 99
+      arr = np.arange(100)
+      #Crear vector de 7 con valores de (10 al 20)
+      arr = np.linspace(10,20, 7)
+      #Crear un arrego de 50 posiciones desde 0 hasta 2 PI
+      from numpy import pi
+      arr = np.linspace(0,2*pi, 50)
+      #Crear un arreglo de 20 posiciones aleatoreo desde (0,1) semilla 5
+      _seed = 5
+      npRdn = np.random.default_rng(_seed)
+      arr = npRdn.random(20)
+      # Crear un arreglo de 50 posiciones aletoreo de 0 a 100 semilla 5
+      npRdn = np.random.default_rng(_seed)
+      arr = npRdn.integers(101, size=50)
+      # Crear un arreglo de 10 posiciones sin repetir aletoreo de 0 a 100 semilla 5
+      npRdn = np.random.default_rng(_seed)
+      arr = npRdn.choice(101, size=10, replace=False)
+    </pre>
+    <hr>
+    <p class="h5">Crear matix:</p>
+    <pre>
+      #Crear matrix de 5 filas por 3 columnas de puros ceros
+      arr = np.zeros((5,3))
+      #Crear matrix de 2 filas por 2 columnas de puros unos
+      arr = np.ones((2,2))
+      #Crear matrix de 7 filas por 1 columna valores aleatoreos muy pequeños
+      arr = np.empty((7,1))
+      # Crear una matrix de 100 filas 1 colunma del 0 al 99
+      arr = np.arange(100).reshape((100,1))
+      # Crear una matrix de 5x2 con los numeros del 0 a 9
+      arr = np.arange(10).reshape((5,2))
+    </pre>
+    <hr>
+    <p class="h5">Unir dos vectores:</p>
+    <pre>
+      #Crear dos arreglos de 5 posiciones, A con valore de 0 a 99 y B de 99 a 200 luego unir esos arreglos.
+      A = np.linspace(0,99,5)
+      B = np.linspace(99,200,5)
+      C = np.concatenate((A,B))
+    </pre>
+    <hr>
+    <p class="h5">Sumar dos vectores:</p>
+    <pre>
+      #Crear dos arreglos de 5 posiciones, A con valore de 0 a 99 y B de 99 a 200, esos arreglos deben de sumarse
+      A = np.linspace(0,99,5)
+      B = np.linspace(99,200,5)
+      C = A + B
+    </pre>
+    <hr>
+    <p class="h5">Matematicos & Estadisticos:</p>
+    <pre>
+      # Crear arreglo aleatoreo de 15 posiciones semilla 5
+      _seed = 5
+      npRdn = np.random.default_rng(_seed)
+      A = npRdn.choice(99999, size=15, replace=False)
+
+      # Maximo
+      A.max()
+      # Minimo
+      A.min()
+      # suma
+      A.sum()
+      # Promedio
+      A.mean()
+
+
+      # Crear una matrix de 4x3 con valores aleatoreos
+      _seed = 5
+      npRdn = np.random.default_rng(_seed)
+
+      A = npRdn.choice(99999, size=12, replace=False).reshape((4,3))
+
+      # Obtener el menor de cada columna
+      A.min(axis=0)
+      # Obtener el maximo de cada fila
+      A.max(axis=1)
+      
+    </pre>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
