@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>TITLE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="FelipedelosH" />
+  <!-- Incluir Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Incluir Bootstrap JS y dependencias de Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+</style>
+<body>
+  <div class="container-fluid">
+    <p class="h1">MatPlotLib</p>
+    <p class="h4">Es una libreria de Python para graficar</p>
+    <br>
+    <p class="h4">Instalar: Python -m pip install matplotlib</p>
+    <p class="h4">Usar: import matplotlib.pyplot as plt</p>
+    <p class="h3">IMPORTATE: limpiar el lienzo, los valores se van agregando a la grafica actual.</p>
+    <hr>
+    <p class="h5">Ver grafica X vs Y</p>
+    <pre>
+      x = ["A","B","C","D","E"]
+      y = [3,5,4,2,6]
+
+      plt.plot(x, y)
+      plt.show()
+    </pre>
+    <hr>
+    <p class="h5">Ver grafica X,X',X'... vs Y con labels</p>
+    <pre>
+      x = ["A","B","C","D","E"]
+      y2=[5,5,5,7,6]
+      y3=[1,1,9,9,0]
+      y = [3,5,4,2,6]
+      
+      plt.plot(x, y, label="y")
+      plt.plot(x, y2, label="y1")
+      plt.plot(x, y3, label="y3")
+      plt.legend()
+      plt.show()
+    </pre>
+    <hr>
+    <p class="h5">titulo de la grafica</p>
+    <pre>
+      plt.title("LoQueSeaM")
+    </pre>
+    <hr>
+    <p class="h5">titulo del ejex & ejey</p>
+    <pre>
+      plt.xlabel("eje x")
+      plt.ylabel("eje y")
+    </pre>
+    <hr>
+    <p class="h5">Modificar escala de eje</p>
+    <pre>
+      # para el EJEY hacerlo de 0 a 20 de cinco en cinco
+      import numpy as np
+      plt.yticks(np.arange(0, 25, 5))
+    </pre>
+    <hr>
+    <p class="h5">Activar cuadriculas</p>
+    <pre>
+      plt.grid()
+    </pre>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
