@@ -110,6 +110,17 @@
       A = np.linspace(0,99,5)
       B = np.linspace(99,200,5)
       C = np.concatenate((A,B))
+
+      # Unir verticalmente 2 vectores:
+      _seed = 5
+      npRdn = np.random.default_rng(_seed)
+      A = npRdn.integers(100, size=(10,4))
+      B = npRdn.integers(100, size=(10,4))
+
+      C = np.vstack((A, B))
+
+      # Unir horizontalmente
+      C = np.hstack((A, B))
     </pre>
     <hr>
     <p class="h5">Sumar dos vectores:</p>
@@ -147,9 +158,36 @@
       A.min(axis=0)
       # Obtener el maximo de cada fila
       A.max(axis=1)
-      
     </pre>
+    <hr>
+    <p class="h5">Filtros:</p>
+    <pre>
+      # Crear una matrix de 10x4 aleatorea y optener todos los numeros pares
+      arr = npRdn.integers(100, size=(10,4))
+      _filter = arr[arr%2==0]
 
+      # Extraer el valor de fila 4 y coluna 3
+      _filter = arr[4,3]
+
+      # Extraer los valores de las Filas 2,3,4 
+      _filter = arr[2:5,::]
+
+      # Extraer el primer valor de la fila 6,7
+      _filter = arr[6:8,0]
+
+      # Crear un arreglo aleatoreo de 20 posiciones y sacar los 6 primeros numeros
+      _seed = 5
+      npRdn = np.random.default_rng(_seed)
+      A = npRdn.choice(101, size=20, replace=False)
+
+      _filter = A[0:6]
+
+      # Crear un arreglo aleatoreo de 20 posiciones y sacar los elementos en la posicion 0,2,4
+      B = A[0:6:2] # Start:0 end:5 Steps=2
+
+      # Todos los elementos en indice par 
+      B = A[::2]
+    </pre>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
