@@ -707,7 +707,7 @@ function sendEmail(){
     var subject = "Job Inquiry - FelipedelosH";
     var textEmail = "Dear Felipe Hernández,\n I'm: " + username + "\nI read you portfolio:\n\n" + usersms + "\n\n" + "My Contact Email:\n" + useremail;
     alert("The 1st email system it's in develop.\nSend Email to 2nd protocol.");
-    openNewTab("mailto:doctorfhernandez@hotmail.com?subject="+subject+"&body="+textEmail);
+    openNewTab("mailto:ing.andresfhernandez@gmail.com?subject="+subject+"&body="+textEmail);
 }
 
 /**

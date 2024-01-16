@@ -39,9 +39,9 @@
       y3=[1,1,9,9,0]
       y = [3,5,4,2,6]
       
-      plt.plot(x, y, label="y")
-      plt.plot(x, y2, label="y1")
-      plt.plot(x, y3, label="y3")
+      plt.plot(x, y, label="y", color="blue")
+      plt.plot(x, y2, label="y1", color="black")
+      plt.plot(x, y3, label="y3", color="red")
       plt.legend()
       plt.show()
     </pre>
@@ -67,6 +67,104 @@
     <p class="h5">Activar cuadriculas</p>
     <pre>
       plt.grid()
+    </pre>
+    <hr>
+    <p class="h5">Activar cuadriculas sintonia fina</p>
+    <pre>
+      plt.minorticks_on()
+    </pre>
+    <hr>
+    <p class="h5">Poner marcadores encima de la linea f(x)</p>
+    <pre>
+      x = ["A","B","C","D","E"]
+      y2=[5,5,5,7,6]
+      y3=[1,1,9,9,0]
+      y = [3,5,4,2,6]
+      
+      plt.plot(x, y, marker="*")
+      plt.plot(x, y2, marker=">")
+      plt.plot(x, y3, marker=".")
+      plt.show()
+    </pre>
+    <hr>
+    <p class="h5">Poner estilo de punteado encima de la linea f(x)</p>
+    <pre>
+      x = ["A","B","C","D","E"]
+      y2=[5,5,5,7,6]
+      y3=[1,1,9,9,0]
+      y = [3,5,4,2,6]
+      
+      plt.plot(x, y, linestyle="dotted")
+      plt.plot(x, y2, linestyle="-")
+      plt.plot(x, y3, linestyle=" ") # No se muestra
+      plt.show()
+    </pre>
+    <hr>
+    <p class="h1">Graficos de barras Verticales</p>
+    <p class="h5">Graficar Barras</p>
+    <pre>
+      # Simple
+      x = ["A","B","C","D","E"]
+      y = [3,5,4,2,6]
+      plt.bar(x,y)
+      plt.show()
+
+      # Multi
+      plt.bar(x,y0)
+      plt.bar(x,y1)
+      plt.bar(x,y2)
+      plt.show()
+    </pre>
+    <hr>
+    <p class="h5">Desfasar X</p>
+    <pre>
+      import numpy as np
+
+      x = np.arange(5)
+      y2=[5,5,5,7,6]
+      y3=[1,1,9,9,0]
+      y = [3,5,4,2,6]
+
+      + K Only in np.range(x) ?
+      plt.bar(x+0.5,y) 
+      plt.bar(x+0.3,y2)
+      plt.bar(x-0.5,y3)
+      plt.show()
+    </pre>
+    <hr>
+    <p class="h5">Apilar Barras Verticales</p>
+    <pre>
+      import numpy as np
+
+      x = np.arange(5)
+      y2=[5,5,5,7,6]
+      y = [3,5,4,2,6]
+      
+      plt.bar(x,y) 
+      plt.bar(x,y2,bottom=y)
+      plt.show()
+    </pre>
+    <hr>
+    <p class="h5">Modificar ancho X</p>
+    <pre>
+      # width=a/b
+      plt.bar(x,y2, width=1/9)
+    </pre>
+    <hr>
+    <p class="h1">Graficos de barras Horizontales</p>
+    <p class="h5">Graficar Barras</p>
+    <pre>
+      # Simple
+      x = [0,1,2,3,4]
+      y = [3,5,4,2,6]
+      plt.barh(x,y)
+      plt.show()
+
+      # Multi
+      plt.barh(x,y0)
+      plt.barh(x,y1)
+      plt.barh(x,y2)
+      plt.show()
     </pre>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
