@@ -92,6 +92,14 @@ $( ".btn-go-instagram" ).on( "click", function() {
     openNewTab("https://www.instagram.com/ccc_co_ccc/");
 });
 
+$( ".link-go-deporty" ).on( "click", function() {
+    openNewTab("https://deporty.com.co");
+});
+
+$( ".link-go-newshore" ).on( "click", function() {
+    openNewTab("https://flyr.com/");
+});
+
 $( ".link-go-hospitalHDSRR" ).on( "click", function() {
     openNewTab("http://www.esehospitalsanrafael.gov.co/");
 });
