@@ -92,6 +92,10 @@ $( ".btn-go-instagram" ).on( "click", function() {
     openNewTab("https://www.instagram.com/ccc_co_ccc/");
 });
 
+$( ".link-go-ucaldas" ).on( "click", function() {
+    openNewTab("https://www.ucaldas.edu.co");
+});
+
 $( ".link-go-deporty" ).on( "click", function() {
     openNewTab("https://deporty.com.co");
 });
