@@ -120,8 +120,16 @@ $( ".btn-go-github-laurens-project" ).on( "click", function() {
     openNewTab("https://github.com/felipedelosh/laurensmusic");
 });
 
+$( ".btn-go-laurens" ).on( "click", function() {
+    openNewTab("https://felipedelosh.github.io/laurensmusic/");
+});
+
 $( ".btn-go-github-cdaanserma-project" ).on( "click", function() {
     openNewTab("https://github.com/felipedelosh/CDA-ANSERMA");
+});
+
+$( ".btn-go-cda" ).on( "click", function() {
+    openNewTab("https://felipedelosh.github.io/CDA-ANSERMA/");
 });
 
 $( ".btn-go-github-portfolio-project" ).on( "click", function() {
