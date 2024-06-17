@@ -144,6 +144,10 @@ $( ".btn-go-github-fakerdata-project" ).on( "click", function() {
     openNewTab("https://github.com/felipedelosh/DataOfRandomPersons");
 });
 
+$( ".btn-go-github-pdf-to-data-excel" ).on( "click", function() {
+    openNewTab("https://github.com/felipedelosh/PdfPythonDataStractor");
+});
+
 $( ".btn-go-github-excelsql-project" ).on( "click", function() {
     openNewTab("https://github.com/felipedelosh/ExcelToSQL");
 });
