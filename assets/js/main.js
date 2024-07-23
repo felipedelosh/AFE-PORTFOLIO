@@ -128,8 +128,16 @@ $( ".btn-go-github-cdaanserma-project" ).on( "click", function() {
     openNewTab("https://github.com/felipedelosh/CDA-ANSERMA");
 });
 
+$( ".btn-go-github-museum-project" ).on( "click", function() {
+    openNewTab(" https://github.com/felipedelosh/MUSEO-DEVIA");
+});
+
 $( ".btn-go-cda" ).on( "click", function() {
     openNewTab("https://felipedelosh.github.io/CDA-ANSERMA/");
+});
+
+$( ".btn-go-museum" ).on( "click", function() {
+    openNewTab("https://felipedelosh.github.io/MUSEO-DEVIA/");
 });
 
 $( ".btn-go-github-portfolio-project" ).on( "click", function() {

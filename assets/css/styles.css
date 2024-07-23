@@ -899,7 +899,7 @@ END inline
 
 /*------ Settings EYE ------*/
 .container_eye {
-  --color: #a5a5b0;
+  --color: #1010e6;
   --size: 30px;
   display: flex;
   justify-content: center;
