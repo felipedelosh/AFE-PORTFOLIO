@@ -899,7 +899,6 @@ END inline
 
 /*------ Settings EYE ------*/
 .container_eye {
-  --color: #1010e6;
   --size: 30px;
   display: flex;
   justify-content: center;
@@ -908,7 +907,16 @@ END inline
   cursor: pointer;
   font-size: var(--size);
   user-select: none;
-  fill: var(--color);
+  animation: colorChange .5s infinite;
+}
+
+@keyframes colorChange {
+  0%, 100% {
+    fill: #1010e6;
+  }
+  50% {
+    fill: #ffffff;
+  }
 }
 
 .container_eye .eye {
