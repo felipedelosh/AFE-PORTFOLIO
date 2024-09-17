@@ -27,9 +27,21 @@ $( "#eyeClose" ).on( "click", function() {
     hideOrShowPortFolioItems();
 });
 //END Click Portfolio items
+//BLOG 
+$( ".btn_weaK_law_numbers_mini" ).on( "click", function() {
+    $('.weaK_law_numbers_mini').css("display", "none");
+    $('.weaK_law_numbers_full').css("display", "block");
+});
+$( ".btn_weaK_law_numbers_full" ).on( "click", function() {
+    $('.weaK_law_numbers_full').css("display", "none");
+    $('.weaK_law_numbers_mini').css("display", "block");
+});
+//END BLOG
+//Send EMAIL
 $( ".contanct_me_send_email" ).on( "click", function() {
     sendEmail();
 });
+//END Send EMAIL
 //Change language of page
 $(".switch-left").on("click", function() {
     _swicthLanguagePage();
@@ -707,6 +719,17 @@ function _closeEYE(){
     }
 }
 
+
+/**
+ * When the page is open close full version of blogs entries
+ * (The first time it´s so much information to page)
+ * same if reload
+*/
+function _blogController(){
+    $('.weaK_law_numbers_full').css("display", "none");
+}
+
+
 /**
  * Reminds when the user enter a name in email from contact
  * @param {*} username 
@@ -923,4 +946,5 @@ _responsiveRefresh();
 _hideShowBtnLanguageController();
 _changeVisualMode()
 _closeEYE();
+_blogController();
 _goToTop();
