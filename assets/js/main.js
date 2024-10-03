@@ -29,12 +29,12 @@ $( "#eyeClose" ).on( "click", function() {
 //END Click Portfolio items
 //BLOG 
 $( ".btn_weaK_law_numbers_mini" ).on( "click", function() {
-    $('.weaK_law_numbers_mini').css("display", "none");
-    $('.weaK_law_numbers_full').css("display", "block");
+    $('.container_blog_weaK_law_numbers_mini').css("display", "none");
+    $('.container_blog_weaK_law_numbers_full').css("display", "block");
 });
 $( ".btn_weaK_law_numbers_full" ).on( "click", function() {
-    $('.weaK_law_numbers_full').css("display", "none");
-    $('.weaK_law_numbers_mini').css("display", "block");
+    $('.container_blog_weaK_law_numbers_full').css("display", "none");
+    $('.container_blog_weaK_law_numbers_mini').css("display", "block");
 });
 //END BLOG
 //Send EMAIL
@@ -726,7 +726,7 @@ function _closeEYE(){
  * same if reload
 */
 function _blogController(){
-    $('.weaK_law_numbers_full').css("display", "none");
+    $('.container_blog_weaK_law_numbers_full').css("display", "none");
 }
 
 
