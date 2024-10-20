@@ -176,6 +176,10 @@ $( ".btn-go-github-excelsql-project" ).on( "click", function() {
     openNewTab("https://github.com/felipedelosh/ExcelToSQL");
 });
 
+$( ".btn-go-github-web-scraping-project" ).on( "click", function() {
+    openNewTab("https://github.com/felipedelosh/Web-Scrapping-1000-ways-to-die");
+});
+
 
 function downloadCV(){
     //Download ENG  if not configure LANG
