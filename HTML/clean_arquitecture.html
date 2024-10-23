@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>Clean Arquitecture</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="FelipedelosH" />
-  <!-- Incluir Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Incluir Bootstrap JS y dependencias de Popper.js -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<style>
-</style>
-<body>
-  <div class="container-fluid">
-    <p class="h1">Clean Arquitecture</p>
-    <p class="h5">Imagine un diseño arquitectonico capaz de entregar sencillez y mantenibilidad a traves del tiempo.<br>Este enfoque busca crear sistemas de software bien estructurados, mantenibles y escalables al organizar el código en capas y establecer reglas claras de dependencias entre ellas.</p>
-    <br>
-    <p class="h3">Reglas:</p>
-    <ul>
-      <li>
-        <p>Existen capas:<br>* Capa de dominio: "Casos de uso, persistencia, Entidades"<br></p>
-      </li>
-      <li>
-        <p>Separa el dominio(Objetos, Métodos, Clases, Casos de uso) de la infrastructura (librerias, database)</p>
-      </li>
-      <li>
-        <p>A traves de interfaces se completa el funcionamiento del software (Inyeción de dependencias, Segregación de interfaces)</p>
-      </li>
-      <li>
-        <pre>
+  <head>
+    <meta charset="utf-8" />
+    <title>Clean Arquitecture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="FelipedelosH" />
+    <!-- Incluir Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Incluir Bootstrap JS y dependencias de Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <style></style>
+  <body>
+    <div class="container-fluid">
+      <p class="h1">Clean Arquitecture</p>
+      <p class="h5">
+        Imagine un diseño arquitectonico capaz de entregar sencillez y
+        mantenibilidad a traves del tiempo. <br />Este enfoque busca crear
+        sistemas de software bien estructurados, mantenibles y escalables al
+        organizar el código en capas y establecer reglas claras de dependencias
+        entre ellas.
+      </p>
+      <br />
+      <p class="h3">Reglas:</p>
+      <ul>
+        <li>
+          <p>
+            Independencias de los frameworks: <br>
+            * El sistema no está enlazado a ningún framework es especifico... son como piezas de 
+            rompecabezas totalmente reemplazables.
+          </p>
+        </li>
+        <li>
+          <p>
+            Independencia de la base de datos: <br>
+            * La lógica de negocio no depende de una base de datos en concreto... la base de Datos
+            es intercambiable.
+          </p>
+        </li>
+        <li>
+          <p>
+            Existen capas:<br />* Capa de dominio: "Casos de uso, persistencia,
+            Entidades"<br />
+          </p>
+        </li>
+        <li>
+          <p>
+            Separa el dominio(Objetos, Métodos, Clases, Casos de uso) de la
+            infrastructura (librerias, database)
+          </p>
+        </li>
+        <li>
+          <p>
+            A traves de interfaces se completa el funcionamiento del software
+            (Inyeción de dependencias, Segregación de interfaces)
+          </p>
+        </li>
+        <li>
+          <pre>
           # Estructura de las carpetas en java sprintboot project
 
           #ProjectName 
@@ -48,34 +79,34 @@
           |---infracstructure
           |--------|-----|drivenAdapters/src  // Specify SQL, Objeto de Acceso a Datos, 
           |--------|-----|entryPoints/src //all API urls
-        </pre>
-      </li>
-    </ul>
-    <br>
-    <p class="h3">Vista en capaz</p>
-    <pre>
+        </pre
+          >
+        </li>
+      </ul>
+      <br />
+      <p class="h3">Vista en capaz</p>
+      <pre>
 
-                -------------\
-                -----/                  \
-              /        INFRAESTRUCTURA    \
-            /      ------------------_    |
-            /     /       aplicación    \  |
-          /     /                      /  |
-          |     |    ---------------   \   |
-          |     |    |    Dominio   |   /  |
-          |     \     --------------   /   |
-          |      \--------------------/    |
-          |         
-              \----------------------------/
+                --------------------------------------
+                /              INFRAESTRUCTURA         \
+              /  ----------------------------------     \
+              /  /              APLICACIÓN             \  \
+            /  /                                    /   \
+            |  |  --------------------------------   |  |
+            |  |  |            DOMINIO             |  |  |
+            |  |  --------------------------------   |  |
+            |   \                                    /   |
+            |    \  --------------------------------/    |
+            \--------------------------------------------/
 
-    </pre>
-    <br>
-    
-  </div>
-  <div style="display: flex; justify-content: center; align-items: center">
-    <br /><br />
-    <a href="../index.html" class="btn btn-primary btn-lg">HOME</a>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</body>
+    </pre
+      >
+      <br />
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center">
+      <br /><br />
+      <a href="../index.html" class="btn btn-primary btn-lg">HOME</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
 </html>
