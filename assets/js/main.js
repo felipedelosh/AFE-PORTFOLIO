@@ -157,7 +157,7 @@ $( ".btn-go-github-portfolio-project" ).on( "click", function() {
 });
 
 $( ".btn-go-github-api-project" ).on( "click", function() {
-    openNewTab("https://github.com/felipedelosh/PruebaTecnicaSIER");
+    openNewTab("https://github.com/felipedelosh/aspDotNetBlankProject");
 });
 
 $( ".btn-go-github-fakerdata-project" ).on( "click", function() {
