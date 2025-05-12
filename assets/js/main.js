@@ -108,8 +108,12 @@ $( ".link-go-ucaldas" ).on( "click", function() {
     openNewTab("https://www.ucaldas.edu.co");
 });
 
-$( ".link-go-deporty" ).on( "click", function() {
-    openNewTab("https://deporty.com.co");
+$( ".link-go-scifamek" ).on( "click", function() {
+    openNewTab("https://scifamek.com/");
+});
+
+$( ".link-go-cycle" ).on( "click", function() {
+    openNewTab("https://www.cycle.net.co/");
 });
 
 $( ".link-go-newshore" ).on( "click", function() {
