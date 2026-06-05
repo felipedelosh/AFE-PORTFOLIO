@@ -112,6 +112,10 @@ $( ".link-go-scifamek" ).on( "click", function() {
     openNewTab("https://scifamek.com/");
 });
 
+$( ".link-go-aguasdm" ).on( "click", function() {
+    openNewTab("https://one.aguasdemanizales.com.co/");
+});
+
 $( ".link-go-cycle" ).on( "click", function() {
     openNewTab("https://www.cycle.net.co/");
 });
